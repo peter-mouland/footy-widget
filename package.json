@@ -1,0 +1,27 @@
+{
+    "name": "footy-widget",
+    "version": "0.0.0",
+    "description": "Example package.json. Feel free to copy!",
+    "main": "src/scripts/footy-widget.js",
+    "repository": {
+        "type": "git",
+        "url": "{{ git.SSH-URL }}"
+    },
+    "scripts": {
+      "postinstall": "bower install",
+      "copy": "caddy copy",
+      "build": "caddy build",
+      "bump": "caddy bump",
+      "release": "npm test && caddy release",
+      "report": "caddy serve test/coverage/phantomjs/",
+      "start": "caddy copy && caddy build -dev && caddy serve",
+      "tdd": "caddy test tdd",
+      "test": "jshint src && caddy copy && caddy build && caddy test"
+    },
+    "devDependencies": {
+      "browserify-istanbul": "^0.2.1",
+      "web-caddy" : "2.0.0-rc.4",
+      "jshint": "^2.6.3"
+    },
+    "author": "{{ git.author }}"
+}
