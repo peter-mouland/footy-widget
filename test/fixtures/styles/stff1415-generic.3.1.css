@@ -1,0 +1,7558 @@
+
+a:link, a, a.visited {
+    text-decoration: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, th, td, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 100%;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    outline: none;
+}
+
+@font-face
+{
+	font-family: "SkyNews";
+	/*src: url("https://content.fantasyfootball.skysports.com/stff13/fonts/skynews/skynews-webfont.woff");*/
+	src: url("https://fantasyfootball.skysports.com/stff13/fonts/skynews/skynews-webfont.woff");
+}
+
+@font-face {
+  font-family: 'skycons';
+  src: url("https://content.fantasyfootball.skysports.com/mobile/fonts/2014/skycons-1.3.8.eot");
+  src: url("https://content.fantasyfootball.skysports.com/mobile/fonts/2014/skycons-1.3.8.eot?#iefix") format("embedded-opentype"), url("https://content.fantasyfootball.skysports.com/mobile/fonts/2014/skycons-1.3.8.woff") format("woff"), url("https://content.fantasyfootball.skysports.com/mobile/fonts/2014/skycons-1.3.8.ttf") format("truetype"), url("https://content.fantasyfootball.skysports.com/mobile/fonts/2014/skycons-1.3.8.svg#skycons_globalregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background: #cecece url('https://content.fantasyfootball.skysports.com/stff13/images/template/bg.jpg') 50% -5px no-repeat;
+}
+
+i.icon {
+		vertical-align: baseline;
+		font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	width: 1.2em;
+	height: 1.2em;
+	background-image: none;
+}
+
+.icon:before {
+  font-family: skycons;
+  content: attr(data-icon);
+}
+
+body.popup {
+    background: #fff;
+}
+
+.leaderboard-wrap {
+    width: 100%;
+    height: 102px;
+    padding-top: 12px;
+    background: #002;
+    background: none, rgba(0, 0, 0, 0.8);
+}
+
+.leaderboard {
+    width: 728px;
+    height: 90px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.ss-header {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAABDCAIAAADS5/i5AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGdJREFUGFdtjjsOgDAMQx1fm5WTcB9GToEEAxP9hbSgEiSGpyfbizmME+flYAiJMZablJkimLMa5gKWjrBoBVRzBdUwo2Y0A2io0nYDj3uW5nAm7uv23eEtLouzfLPv4D7o++Xlr8MFICxCMRmn6qUAAAAASUVORK5CYII=) repeat-x 0 50% #00a;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 48px;
+	font-size: 13px;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.ss-header .ss-header-inner {
+    width: 996px;
+    margin: 0 auto;
+}
+
+a.ss-tvlogo {
+    display: block;
+    float: left;
+    width: 180px;
+    height: 48px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/sky-sports-logo.png') 18px 12px no-repeat;
+    text-indent: -1000px;
+
+}
+
+a.ico-home {
+    display: block;
+    float: left;
+    width: 42px;
+    height: 48px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/ico-home.png') 12px 15px no-repeat;
+    text-indent: -1000px;
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.head-left {
+    float: left;
+}
+
+.head-right {
+    float: right;
+}
+
+.head-right-inner {
+    padding: 11px 11px 0 0;
+    color: #5d7cea;
+}
+
+.head-right-inner a {
+    color: #fff;
+}
+
+.btn-header {
+    border: 0;
+    color: #fff;
+    -webkit-box-shadow: 0 1px rgba(0, 0, 0, .5) inset, 0 -1px rgba(255, 255, 255, .25) inset, 1px 0 rgba(0, 0, 0, .1) inset, -1px 0 rgba(0, 0, 0, .1) inset;
+    box-shadow: 0 1px rgba(0, 0, 0, .5) inset, 0 -1px rgba(255, 255, 255, .25) inset, 1px 0 rgba(0, 0, 0, .1) inset, -1px 0 rgba(0, 0, 0, .1) inset;
+    background: #586699;
+    background: -moz-linear-gradient(top, #586699 0, #283b7a 50%, #0f246b 51%, #021866 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #586699), color-stop(50%, #283b7a), color-stop(51%, #0f246b), color-stop(100%, #021866));
+    background: -webkit-linear-gradient(top, #586699 0, #283b7a 50%, #0f246b 51%, #021866 100%);
+    background: -o-linear-gradient(top, #586699 0, #283b7a 50%, #0f246b 51%, #021866 100%);
+    background: -ms-linear-gradient(top, #586699 0, #283b7a 50%, #0f246b 51%, #021866 100%);
+    background: linear-gradient(to bottom, #586699 0, #283b7a 50%, #0f246b 51%, #021866 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#586699', endColorstr='#021866', GradientType=0);
+
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: SkyNews, Arial, sans-serif;
+    font-weight: 400 !important;
+    font-size: 16px;
+    font-size: 1.23077rem;
+    font-weight: 400;
+    cursor: pointer;
+    margin: 0;
+    line-height: 36px;
+    min-width: 36px;
+    padding: 0 9px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn-small {
+    font-size: 11px;
+    font-size: .84615rem;
+    line-height: 27px;
+    min-width: 27px;
+    font-family: sans-serif;
+}
+
+.btn-text {
+    padding: 0 5px;
+}
+
+.wrap {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/gui sde.jpg') 0 px 0 px no-repeat;
+    width: 996px;
+    margin: 0 auto;
+}
+
+#header {
+    width: 996px;
+    margin: 0 auto;
+    height: 183px;
+    overflow: hidden;
+    position: relative;
+}
+
+.site-logo {
+}
+
+.site-logo img {
+    margin: 30px 0;
+}
+
+.site-club {
+    position: relative;
+    float: right;
+    z-index: 10;
+    margin-top: 14px;
+}
+
+#countdown .black {
+    background: transparent !important;
+}
+
+.site-countdown {
+    width: 190px;
+    position: relative;
+    top: -111px;
+    left: 468px;
+}
+
+.site-countdown p {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: "SkyNews", Arial, sans-serif;
+    color: #515151;
+    text-align: center;
+    width: 190px;
+    margin: 4px 0;
+}
+
+#nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#nav li {
+    display: block;
+    float: left;
+    font-family: "SkyNews", Arial, sans-serif;
+}
+
+#nav li a {
+    display: block;
+    padding: 14px 12px;
+    color: #9fa5bb;
+}
+
+#nav li:first-child {
+    border-top-left-radius: 3px;
+}
+
+#nav li a:hover {
+    color: #fff;
+}
+
+#nav li.selected {
+    background: #fff;
+}
+
+#nav li.selected a {
+    color: #de0000;
+}
+
+#nav li.selected a:hover {
+    color: #de0000;
+}
+
+#footer {
+    margin: 30px 0;
+    padding-bottom: 30px;
+}
+
+#footer li {
+    float: left;
+    font-size: 14px;
+    color: #515151;
+    margin-right: 16px;
+}
+
+#footer li a {
+    color: #515151;
+}
+
+#footer li a:hover {
+    text-decoration: underline;
+}
+
+#footer li img {
+    position: relative;
+    top: 2px;
+}
+
+#nav li, .STFFsectHead {
+    -webkit-font-smoothing: antialiased;
+}
+
+div#nav li a {
+    padding: 14px 12px;
+}
+
+div#nav li.nav-ico {
+    float: right;
+    padding: 0;
+}
+
+div#nav li.nav-ico a {
+    padding: 0 0 0 3px;
+    position: relative;
+    z-index: 2000;
+    top: 14px;
+    right: 13px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+div#nav li.nav-ico a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.STFFpageHead {
+    color: #011a6d !important;
+    font-size: 26px;
+    height: 41px;
+    line-height: 51px;
+    margin: 0;
+    font-family: "SkyNews", Arial, sans-serif;
+    clear: both;
+    overflow: hidden;
+}
+
+.STFFpageHeadWrap {
+    margin: 12px 0;
+}
+
+.STFFpageHeadWrap span {
+    margin: 14px;
+    float: left;
+}
+
+.titleHeader {
+    margin-top: 14px;
+}
+
+.subTitle {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.subnav {
+    margin-top: -42px;
+    padding: 18px 28px 0 0;
+    text-align: right;
+}
+
+.subnav li {
+    display: inline-block;
+    margin: 0 0 0 20px;
+}
+
+.subnav li a {
+    color: #515151;
+    font-family: "SkyNews", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+}
+
+.subnav li a:hover {
+    text-decoration: underline;
+}
+
+.subnav li.selected a {
+    color: #de0000;
+}
+
+article {
+    width: 996px;
+    margin: 0 auto;
+    font: 77% arial, helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.STFFcontent {
+    display: block;
+    width: 984px;
+    margin: 0 auto;
+    padding: 0 0 14px 14px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.STFFthird {
+    width: 313px;
+    margin: 14px 14px 0 0;
+}
+
+.STFF2thirds {
+    width: 640px;
+    margin: 14px 14px 0 0;
+}
+
+.STFF3thirds {
+    width: 970px;
+    margin: 14px 14px 0 0;
+}
+
+.STFFcolr {
+    width: 654px;
+    float: left;
+}
+
+.STFFcoll {
+    width: 327px;
+    float: left;
+}
+
+.STFFcolr .STFF2thirds {
+    clear: both;
+}
+
+.STFFsection {
+    float: left;
+}
+
+.STFFsectCont {
+    border: 1px solid #CBCACA;
+    border-radius: 0 0 0 5px;
+    border-top: 0;
+    -webkit-box-shadow: 0 5px 10px -5px #000000;
+    box-shadow: 0 5px 10px -5px #000000;
+    position: relative;
+	margin-top: 0 !important;
+	margin-bottom: 10px;
+}
+
+div.STFF2thirds.floatingmiddle {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+p.withpadding {
+	padding: 10px 10px 5px;
+}
+
+p.sms-email-message-container {
+	margin: 10px 10px 20px;
+	padding: 10px !important;
+	border: 2px solid #cdcecd;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.socialcontainer {
+	width: 98%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.socialcontainer .button {
+	width: 100%;
+	margin: 0 0 5px;
+}
+
+.STFFmpu {
+    text-align: center;
+    background: #bfc1be;
+    height: 270px;
+    padding-top: 17px;
+    border-radius: 4px;
+}
+
+.STFFsectHead {
+    width: 100%;
+    height: 40px;
+    text-indent: 14px;
+    color: #fff;
+    line-height: 40px;
+    border-radius: 5px 5px 0 0;
+    font-family: 'SkyNews', arial, sans-serif;
+    font-size: 18px;
+    background: #032392;
+    background: -moz-linear-gradient(top, #032392 0, #011a6d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #032392), color-stop(100%, #011a6d));
+    background: -webkit-linear-gradient(top, #032392 0, #011a6d 100%);
+    background: -o-linear-gradient(top, #032392 0, #011a6d 100%);
+    background: -ms-linear-gradient(top, #032392 0, #011a6d 100%);
+    background: linear-gradient(to bottom, #032392 0, #011a6d 100%);
+}
+
+#STFFHeadToHeadFixtCont {
+	
+}
+
+#STFFHeadToHeadFixtCont h2.STFFsectHead {
+	text-align: center;
+}
+
+#STFFHeadToHeadFixtCont ul {
+	color: #fff;
+	
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	background-color: #111211;
+}
+
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion div.header3.greygrad {
+	text-align: center;
+	height: 45px;
+	margin: 0 0 0 -1px;
+	position: relative;
+	width: 304px;
+}
+
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion div.header3.greygrad h3 {
+	width: 200px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 18px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion div.header3.greygrad div.datehtoh {
+	width: 200px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 15px;
+	font-size: 11px;
+}
+
+span.sprite.prevhtoh.icoPrev {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+span.sprite.nexthtoh.icoNext {
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header tbody tr.lgreygrad {
+	height: 40px;
+	border-bottom: 1px solid #cbcac9;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header tbody tr.lgreygrad:last-child {
+	border-bottom-style: none;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header tbody tr.lgreygrad td.fixt1 h3 {
+	padding-right: 10px;
+	text-align: right;
+	color: #0a0b0a;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 10px;
+	white-space: nowrap;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 width: 105px;
+	float: right;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header tbody tr.lgreygrad td.fixt1 span {
+	text-align: right;
+	clear: both;
+	float: right;
+	padding-right: 10px;
+	padding-left: 10px;
+	white-space: nowrap;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	width: 105px;
+	font-size: 11px;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header tbody tr.lgreygrad td.fixt3 h3 {
+	text-align: left;
+	color: #0a0b0a;
+	font-size: 13px;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+	white-space: nowrap;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 width: 105px;
+	 
+}
+
+#STFFHeadToHeadFixtCont td.fixt2 {
+	text-align: center;
+	color: #0a0b0a;
+	width: 61px;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header tbody tr.lgreygrad td.fixt2.htoh2scores {
+	color: #dd0000;
+	font-weight: bold;
+	width: 51px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header tbody tr.lgreygrad td.fixt2.htoh2scores span {
+	width: 40px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+#STFFHeadToHeadFixtCont div div.STFFsectCont.accordion table.accord-header td.fixt3 span {
+	text-align: left;
+	clear: both;
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	white-space: nowrap;
+	 overflow: hidden;
+	 text-overflow: ellipsis;
+	 width: 105px;
+	font-size: 11px;
+}
+
+.STFFsectHead .icoSkyBet {
+    float: right;
+    margin-top: 11px;
+    margin-right: 8px;
+}
+
+.STFFsectHead #mailMates {
+    float: right;
+    margin-top: 6px;
+    margin-right: 8px;
+}
+
+.STFFsectHead .btn {
+    text-indent: 0;
+}
+
+.btnsmall {
+    font-size: 11px;
+    line-height: 27px;
+    min-width: 27px;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+.header1 {
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 9px;
+}
+
+.header2 {
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 9px;
+}
+
+.header3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 9px;
+    text-shadow: 0 1px #000;
+}
+
+.header4 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #838383;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 9px;
+    background: #f0f0f0;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    -webkit-box-shadow: 0 1px 0 #FFF inset;
+    box-shadow: 0 1px 0 #FFF inset;
+}
+
+.header5 {
+    color: #022087;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 18px;
+}
+
+.button {
+    position: relative;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 13px;
+    height: 30px;
+    line-height: 28px;
+    width: 130px;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fullwidthbtn {
+	width: 98%;
+}
+
+.fakeLink {
+    position: relative;
+    font-size: 13px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    text-decoration: underline;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    color: #515151;
+}
+
+.button .icoTra {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+
+.button .icoCap {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left !important;
+    padding-left: 20px;
+}
+
+.right {
+    text-align: right !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.black {
+    background: #000;
+    color: #fff;
+}
+
+.grey {
+    background: #464646;
+    color: #fff;
+}
+
+.lgrey {
+    background: #EBEBEB;
+}
+
+.fadeOut {
+    opacity: 0.4;
+}
+
+.clear {
+    clear: both;
+    overflow: hidden;
+}
+
+.placeholder {
+    color: #666;
+}
+
+.hide {
+    display: none;
+}
+
+.awards-badge {
+    line-height: 22px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.awardsScale {
+    width: 35%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 10px;
+    left: -30px;
+}
+
+.awardsScale h3 {
+    color: #9a9a9a;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 3px 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.awardsScale-wrapper {
+    padding: 3px;
+    background: #dbdbdb;
+    height: 22px;
+    border-radius: 15px;
+}
+
+.awardsScale ol li {
+    float: left;
+    height: 22px;
+    width: 20%;
+    text-transform: uppercase;
+    background: #b9b9b9;
+    background: -moz-linear-gradient(top, #b9b9b9 1%, #e0e0e0 16%, #fcfcfc 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #b9b9b9), color-stop(16%, #e0e0e0), color-stop(100%, #fcfcfc));
+    background: -webkit-linear-gradient(top, #b9b9b9 1%, #e0e0e0 16%, #fcfcfc 100%);
+    background: -o-linear-gradient(top, #b9b9b9 1%, #e0e0e0 16%, #fcfcfc 100%);
+    background: linear-gradient(to bottom, #b9b9b9 1%, #e0e0e0 16%, #fcfcfc 100%);
+    -webkit-box-shadow: inset 0 0 1px #a4a4a4;
+    box-shadow: inset 0 0 1px #a4a4a4;
+}
+
+.awardsScale {
+    position: relative;
+}
+
+.awardsScale p, p.awardsScalePara {
+    margin: 0 auto;
+    font-size: 9px;
+    color: #9d9d9d;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.awardsScale ol li.a {
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.awardsScale ol li.e {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.awardsScale .awardsScale-qualified p {
+    color: #515151;
+    font-weight: bold;
+}
+
+.awardsScale-bar {
+    display: block;
+    float: left;
+    position: absolute;
+    width: 0;
+    height: 22px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: width 2s;
+    -webkit-transition: width 2s;
+}
+
+.STFFContHead {
+    width: 996px;
+    height: 70px;
+    display: block;
+    position: relative;
+}
+
+.STFFContHeadLarge {
+    height: 230px;
+    position: relative;
+}
+
+.STFFContHeadLarge_share {
+    height: 160px;
+    position: relative;
+}
+
+.STFFContHead table {
+    table-layout: fixed;
+    font-family: 'SkyNews', arial, sans-serif;
+    position: absolute;
+    top: 15px;
+}
+
+.STFFContHead th {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+}
+
+.STFFContHead td {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+}
+
+.STFFContHead td a {
+    color: #fff;
+}
+
+.STFFthird .header3 {
+    width: 304px;
+    margin-left: -1px;
+    clear: both;
+}
+
+.STFFfixtures .STFFsectCont .header3 {
+    margin-left: 0;
+}
+
+div.copyStyle {
+    margin-top: 14px;
+}
+
+div.copyStyle p {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    color: #515151;
+    margin: 0 auto 9px auto;
+    width: 96%;
+}
+
+div.copyStyle a {
+    color: #424242;
+    font-weight: bold;
+}
+
+div.copyStyle a.button {
+    color: #fff;
+    font-weight: normal;
+}
+
+div.copyStyle li {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    color: #515151;
+    margin: 0 auto 9px auto;
+    width: 96%;
+}
+
+div.copyStyle table {
+    table-layout: fixed;
+    width: 96% !important;
+    margin: 0 auto 9px auto;
+}
+
+div.copyStyle table td {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    padding-left: 5px;
+    border-bottom: 1px solid #E3E3E3;
+    vertical-align: top;
+}
+
+.popup div.copyStyle {
+    margin-top: 14px;
+    width: 664px;
+    height: 440px;
+    overflow: auto;
+}
+
+.blackgrad {
+    color: #fff;
+    background: #393939;
+    background: -moz-linear-gradient(top, #393939 0, #030303 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #393939), color-stop(100%, #030303));
+    background: -webkit-linear-gradient(top, #393939 0, #030303 100%);
+    background: -o-linear-gradient(top, #393939 0, #030303 100%);
+    background: -ms-linear-gradient(top, #393939 0, #030303 100%);
+    background: linear-gradient(to bottom, #393939 0, #030303 100%);
+}
+
+.bluegrad {
+    color: #fff;
+    background-color: #032392;
+    background: -moz-linear-gradient(center top, #032392 0, #011A6D 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #032392), color-stop(100%, #011A6D));
+    background: -webkit-linear-gradient(top, #032392 0, #011A6D 100%);
+    background: -o-linear-gradient(top, #032392 0, #011A6D 100%);
+    background: -ms-linear-gradient(top, #032392 0, #011A6D 100%);
+    background: linear-gradient(to bottom, #032392 0, #011A6D 100%);
+}
+
+.greygrad {
+    color: #fff;
+    background: #565656;
+    background: -moz-linear-gradient(top, #565656 0, #323232 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #565656), color-stop(100%, #323232));
+    background: -webkit-linear-gradient(top, #565656 0, #323232 100%);
+    background: -o-linear-gradient(top, #565656 0, #323232 100%);
+    background: -ms-linear-gradient(top, #565656 0, #323232 100%);
+    background: linear-gradient(to bottom, #565656 0, #323232 100%);
+}
+
+.greygrad2 {
+    color: #fff !important;
+    background: #797878;
+    background: -moz-linear-gradient(top, #797878 0, #919090 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #797878), color-stop(100%, #919090));
+    background: -webkit-linear-gradient(top, #797878 0, #919090 100%);
+    background: -o-linear-gradient(top, #797878 0, #919090 100%);
+    background: -ms-linear-gradient(top, #797878 0, #919090 100%);
+    background: linear-gradient(to bottom, #797878 0, #919090 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#797878, endColorstr=' #919090, GradientType=0);
+}
+
+.lgreygrad {
+    color: #7D7C7C;
+    background: #f4f3f3;
+    background: -moz-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f3f3), color-stop(100%, #e9e8e8));
+    background: -webkit-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%);
+    background: -o-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%);
+    background: -ms-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%);
+    background: linear-gradient(to bottom, #f4f3f3 0, #e9e8e8 100%);
+}
+
+.bluebtn {
+    box-shadow: 0 1px rgba(0, 0, 0, .5) inset, 0 -1px rgba(255, 255, 255, .25) inset, 1px 0 rgba(0, 0, 0, .1) inset, -1px 0 rgba(0, 0, 0, .1) inset;
+    background-color: #19469d;
+    color: #fff;
+    background-image: -moz-linear-gradient(top, #6b88c2 0, #365fab 50%, #1a49a5 50%, #19469d 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6b88c2), color-stop(50%, #365fab), color-stop(50%, #1a49a5), color-stop(100%, #19469d));
+    background-image: -webkit-linear-gradient(top, #6b88c2 0, #365fab 50%, #1a49a5 50%, #19469d 100%);
+    background-image: -o-linear-gradient(top, #6b88c2 0, #365fab 50%, #1a49a5 50%, #19469d 100%);
+    background-image: -ms-linear-gradient(top, #6b88c2 0, #365fab 50%, #1a49a5 50%, #19469d 100%);
+    background-image: linear-gradient(to bottom, #6b88c2 0, #365fab 50%, #1a49a5 50%, #19469d 100%);
+}
+
+.whitegrad {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0, #e3e3e3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e3e3e3));
+    background: -webkit-linear-gradient(top, #ffffff 0, #e3e3e3 100%);
+    background: -o-linear-gradient(top, #ffffff 0, #e3e3e3 100%);
+    background: -ms-linear-gradient(top, #ffffff 0, #e3e3e3 100%);
+    background: linear-gradient(to bottom, #ffffff 0, #e3e3e3 100%);
+}
+
+.greenGrad {
+    background: #000000;
+    background: -moz-linear-gradient(top, #000000 0, #004723 40%, #004723 60%, #000000 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #000000), color-stop(40%, #004723), color-stop(60%, #004723), color-stop(100%, #000000));
+    background: -webkit-linear-gradient(top, #000000 0, #004723 40%, #004723 60%, #000000 100%);
+    background: -o-linear-gradient(top, #000000 0, #004723 40%, #004723 60%, #000000 100%);
+    background: -ms-linear-gradient(top, #000000 0, #004723 40%, #004723 60%, #000000 100%);
+    background: linear-gradient(to bottom, #000000 0, #004723 40%, #004723 60%, #000000 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+}
+
+.STFFsectCont.greenGrad {
+    border: 0 !important;
+}
+
+.FBBtn {
+    background-color: #cfdff9;
+    background-image: -moz-linear-gradient(top, white 0, white 50%, #cfdff9 50%, #fff 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #cfdff9), color-stop(100%, #fff));
+    background-image: -webkit-linear-gradient(top, white 0, white 50%, #cfdff9 50%, #fff 100%);
+    background-image: -o-linear-gradient(top, white 0, white 50%, #cfdff9 50%, #fff 100%);
+    background-image: -ms-linear-gradient(top, white 0, white 50%, #cfdff9 50%, #fff 100%);
+    background-image: linear-gradient(to bottom, white 0, white 50%, #cfdff9 50%, #fff 100%);
+    border: 1px solid #9ebff4;
+    color: #354aa5;
+	font-size: 16px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.EMBtn {
+    background-color: #e3e4e3;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(0.5, white), color-stop(0.5, #d0d0d0), to(#fff));
+	background-image: -webkit-linear-gradient(top, white 0%, white 50%, #d0d0d0 50%, #fff 100%);
+	background-image: -moz-linear-gradient(top, white 0%, white 50%, #d0d0d0 50%, #fff 100%);
+	background-image: -ms-linear-gradient(top, white 0%, white 50%, #d0d0d0 50%, #fff 100%);
+	background-image: -o-linear-gradient(top, white 0%, white 50%, #d0d0d0 50%, #fff 100%);
+	background-image: linear-gradient(to bottom, white 0%, white 50%, #d0d0d0 50%, #fff 100%);
+	border: 1px solid #a9aaa9;
+    color: #4f504f;
+	font-size: 16px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.socialcontainer a.button.whiteBtn.sharebtn, a.button.whiteBtn.sharebtn.viewleague.fullwidthbtn {
+	font-size: 16px;
+	line-height: 40px;
+	height: 40px;
+}
+
+.TWBtn {
+    background-color: #e4f0f9;
+    background-image: -moz-linear-gradient(top, white 0, white 50%, #e4f0f9 50%, #fff 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(50%, white), color-stop(50%, #e4f0f9), color-stop(100%, #fff));
+    background-image: -webkit-linear-gradient(top, white 0, white 50%, #e4f0f9 50%, #fff 100%);
+    background-image: -o-linear-gradient(top, white 0, white 50%, #e4f0f9 50%, #fff 100%);
+    background-image: -ms-linear-gradient(top, white 0, white 50%, #e4f0f9 50%, #fff 100%);
+    background-image: linear-gradient(to bottom, white 0, white 50%, #e4f0f9 50%, #fff 100%);
+    border: 1px solid #a3cbe9;
+    color: #4d8aaa;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.yellowBtn {
+    color: #000;
+    border: 1px solid #D3C800;
+    background: #fffa99;
+    background: -moz-linear-gradient(top, #fff204 0, #fffa99 49%, #fff304 50%, #f4ed62 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff204), color-stop(49%, #fffa99), color-stop(50%, #fff304), color-stop(100%, #f4ed62));
+    background: -webkit-linear-gradient(top, #fff204 0, #fffa99 49%, #fff304 50%, #f4ed62 100%);
+    background: -o-linear-gradient(top, #fff204 0, #fffa99 49%, #fff304 50%, #f4ed62 100%);
+    background: -ms-linear-gradient(top, #fff204 0, #fffa99 49%, #fff304 50%, #f4ed62 100%);
+    background: linear-gradient(to bottom, #fff204 0, #fffa99 49%, #fff304 50%, #f4ed62 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff204', endColorstr='#f4ed62', GradientType=0);
+}
+
+.whiteBtn {
+    color: #000;
+    border: 1px solid #CBCACA;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #fefefe 0, #ffffff 49%, #ededed 52%, #fefefe 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(49%, #ffffff), color-stop(52%, #ededed), color-stop(100%, #fefefe));
+    background: -webkit-linear-gradient(top, #fefefe 0, #ffffff 49%, #ededed 52%, #fefefe 100%);
+    background: -o-linear-gradient(top, #fefefe 0, #ffffff 49%, #ededed 52%, #fefefe 100%);
+    background: -ms-linear-gradient(top, #fefefe 0, #ffffff 49%, #ededed 52%, #fefefe 100%);
+    background: linear-gradient(to bottom, #fefefe 0, #ffffff 49%, #ededed 52%, #fefefe 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#fefefe', GradientType=0);
+}
+
+a.whiteBtn:hover {
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(51%, #e9e9e9), color-stop(100%, #e9e9e9));
+    background: -webkit-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: -o-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: -ms-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0);
+}
+
+.greenBtn {
+    color: #fff;
+    border: 1px solid #0E9011;
+    background: #0abb0e;
+    background: -moz-linear-gradient(top, #019618 0, #18aa3d 49%, #009517 50%, #1bc048 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #019618), color-stop(49%, #18aa3d), color-stop(50%, #009517), color-stop(100%, #1bc048));
+    background: -webkit-linear-gradient(top, #019618 0, #18aa3d 49%, #009517 50%, #1bc048 100%);
+    background: -o-linear-gradient(top, #019618 0, #18aa3d 49%, #009517 50%, #1bc048 100%);
+    background: -ms-linear-gradient(top, #019618 0, #18aa3d 49%, #009517 50%, #1bc048 100%);
+    background: linear-gradient(to bottom, #019618 0, #18aa3d 49%, #009517 50%, #1bc048 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#019618', endColorstr='#1bc048', GradientType=0);
+}
+
+.blackBtn {
+    color: #fff;
+    border: 1px solid #000000;
+    background: #252525;
+    background: -moz-linear-gradient(top, #252525 0, #4c4c4c 50%, #000 51%, #4c4c4c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #252525), color-stop(50%, #4c4c4c), color-stop(51%, #000), color-stop(100%, #4c4c4c));
+    background: -webkit-linear-gradient(top, #252525 0, #4c4c4c 50%, #000 51%, #4c4c4c 100%);
+    background: -o-linear-gradient(top, #252525 0, #4c4c4c 50%, #000 51%, #4c4c4c 100%);
+    background: -ms-linear-gradient(top, #252525 0, #4c4c4c 50%, #000 51%, #4c4c4c 100%);
+    background: linear-gradient(to bottom, #252525 0, #4c4c4c 50%, #000 51%, #4c4c4c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#252525', endColorstr='#4c4c4c', GradientType=0);
+}
+
+.redBtn {
+    color: #fff;
+    border: 1px solid #a60609;
+    background: #e70204;
+    background: -moz-linear-gradient(top, #a70609 1%, #d50002 49%, #a60609 50%, #ec090b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #a70609), color-stop(49%, #d50002), color-stop(50%, #a60609), color-stop(100%, #ec090b));
+    background: -webkit-linear-gradient(top, #a70609 1%, #d50002 49%, #a60609 50%, #ec090b 100%);
+    background: -o-linear-gradient(top, #a70609 1%, #d50002 49%, #a60609 50%, #ec090b 100%);
+    background: -ms-linear-gradient(top, #a70609 1%, #d50002 49%, #a60609 50%, #ec090b 100%);
+    background: linear-gradient(to bottom, #a70609 1%, #d50002 49%, #a60609 50%, #ec090b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e70204', endColorstr='#ec090b', GradientType=0);
+}
+
+a.redBtn:hover {
+    background: #d60002;  
+    background: -moz-linear-gradient(top, #d60002 0, #d60002 50%, #a60609 51%, #a60609 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d60002), color-stop(50%, #d60002), color-stop(51%, #a60609), color-stop(100%, #a60609)); 
+    background: -webkit-linear-gradient(top, #d60002 0, #d60002 50%, #a60609 51%, #a60609 100%); 
+    background: -o-linear-gradient(top, #d60002 0, #d60002 50%, #a60609 51%, #a60609 100%); 
+    background: -ms-linear-gradient(top, #d60002 0, #d60002 50%, #a60609 51%, #a60609 100%); 
+    background: linear-gradient(to bottom, #d60002 0, #d60002 50%, #a60609 51%, #a60609 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d60002', endColorstr='#a60609', GradientType=0); 
+}
+
+.greyBtn {
+    color: #B7B7B7;
+    border: 1px solid #B7B7B7;
+    background: #f4f3f3;  
+    background: -moz-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4f3f3), color-stop(100%, #e9e8e8)); 
+    background: -webkit-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%); 
+    background: -o-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%); 
+    background: -ms-linear-gradient(top, #f4f3f3 0, #e9e8e8 100%); 
+    background: linear-gradient(to bottom, #f4f3f3 0, #e9e8e8 100%); 
+}
+
+a.greenBtn:hover {
+    background: #19b845;  
+    background: -moz-linear-gradient(top, #19b845 0, #19b845 50%, #009517 51%, #009517 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #19b845), color-stop(50%, #19b845), color-stop(51%, #009517), color-stop(100%, #009517)); 
+    background: -webkit-linear-gradient(top, #19b845 0, #19b845 50%, #009517 51%, #009517 100%); 
+    background: -o-linear-gradient(top, #19b845 0, #19b845 50%, #009517 51%, #009517 100%); 
+    background: -ms-linear-gradient(top, #19b845 0, #19b845 50%, #009517 51%, #009517 100%); 
+    background: linear-gradient(to bottom, #19b845 0, #19b845 50%, #009517 51%, #009517 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#19b845', endColorstr='#009517', GradientType=0); 
+}
+
+#STFFwdw h4 {
+    height: 24px;
+    line-height: 24px;
+    text-indent: 10px;
+    cursor: pointer;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #CBCACA;
+    position: relative;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+#STFFwdw h4 span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+#STFFwdw table {
+    width: 100%;
+    table-layout: fixed;
+    font-size: 12px;
+}
+
+#STFFwdw table td, #STFFwdw table th {
+    height: 24px;
+    line-height: 24px;
+}
+
+#STFFwdw table td {
+    border-bottom: 1px solid #EBEFF5;
+    text-indent: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#STFFwdw table td:first-child, #STFFwdw table th:first-child {
+    width: 15%;
+}
+
+#STFFwdw table td a {
+    color: #DF3038;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#STFFwdw table th {
+    background: #EBEFF5;
+    border-left: 1px solid #CAD6E8;
+    text-indent: 5px;
+    font-weight: bold;
+    color: #515151;
+}
+
+#STFFwdw table .tdodds {
+    width: 15%;
+    text-align: center;
+    text-indent: 0;
+}
+
+#STFFwdw li.on h4 span {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-position: -150px -50px;
+}
+
+.STFFRss {
+    clear: both;
+    margin-bottom: 14px;
+    height: 106px;
+}
+
+.STFFRss img {
+    width: 200px;
+    margin: 0 30px 15px 0;
+    float: left;
+}
+
+.STFFRss {
+    width: 100%;
+    background: #fff;
+}
+
+.STFFRss h3 {
+    width: 90%;
+    margin: 10px auto 4px;
+    font-family: 'SkyNews', arial, sans-serif;
+}
+
+.STFFRss h3 a {
+    font-weight: 100;
+    font-size: 18px;
+    color: #d92231;
+    line-height: 24px;
+    font-family: 'SkyNews', arial, sans-serif;
+    text-decoration: none;
+}
+
+.STFFRss p {
+    line-height: 20px;
+    font-size: 13px;
+    color: #515151;
+    margin: 0 auto 13px auto;
+    width: 90%;
+}
+
+.STFFthird .STFFRss {
+    height: auto;
+    margin: 0;
+}
+
+.STFFthird .STFFRss img {
+    width: 313px;
+    margin: 0 0 14px -1px !important;
+}
+
+.STFFthird .STFFRss h3 {
+    margin-top: 0;
+}
+
+#clubHeader {
+    margin-top: 14px;
+}
+
+.subTitle {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 14px;
+    margin-top: 14px;
+}
+
+.sprite {
+    background-image: url('https://content.fantasyfootball.skysports.com/stff13/images/header/sff_sprite2-2.png');
+}
+
+.icoPrev {
+    display: block;
+    background-position: 10px 11px;
+    width: 30px;
+    height: 40px;
+}
+
+.icoNext {
+    display: block;
+    background-position: -45px 11px;
+    width: 30px;
+    height: 40px;
+}
+
+.icoUp {
+    display: block;
+    background-position: -100px -0px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoDown {
+    display: block;
+    background-position: -150px -0px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoDownSingle {
+    display: block;
+    background-position: -200px -0px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoPrevGrey {
+    display: block;
+    background-position: -0px -50px;
+    width: 12px;
+    height: 12px;
+}
+
+.icoNextGrey {
+    display: block;
+    background-position: -50px -50px;
+    width: 12px;
+    height: 12px;
+}
+
+.icoDownSm {
+    display: block;
+    background-position: -100px -50px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoUpSm {
+    display: block;
+    background-position: -150px -50px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoLockLT {
+    display: block;
+    background-position: -250px -50px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoWarn {
+    display: block;
+    background-position: -100px -100px;
+    width: 25px;
+    height: 25px;
+}
+
+.icoAlert {
+    display: block;
+    background-position: -150px -100px;
+    width: 25px;
+    height: 25px;
+}
+
+.icoLoggedin {
+    background-position: -200px -97px;
+    width: 20px;
+    height: 22px;
+    margin: 0 -5px -5px 5px;
+    display: inline-block;
+}
+
+.icoLeft {
+    display: block;
+    background-position: -100px -150px;
+    width: 25px;
+    height: 52px;
+}
+
+.icoRight {
+    display: block;
+    background-position: -150px -150px;
+    width: 25px;
+    height: 52px;
+}
+
+.icoLive {
+    display: block;
+    background-position: -0px -250px;
+    width: 30px;
+    height: 18px;
+}
+
+.icoStat {
+    display: block;
+    background-position: -50px -250px;
+    width: 26px;
+    height: 18px;
+}
+
+.icoSkyBet {
+    display: block;
+    background-position: -100px -250px;
+    width: 75px;
+    height: 19px;
+}
+
+.icoTra {
+    display: block;
+    background-position: 0 -300px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoInj {
+    display: block;
+    background-position: -50px -300px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoDou {
+    display: block;
+    background-position: -100px -300px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoUna {
+    display: block;
+    background-position: -150px -300px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoCrG {
+    display: block;
+    background-position: -200px -300px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoCrB {
+    display: block;
+    background-position: -250px -300px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoSus {
+    display: block;
+    background-position: -300px -300px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoLoggedClose {
+    display: block;
+    background-position: -350px -300px;
+    width: 25px;
+    height: 25px;
+}
+
+.icoCap {
+    display: block;
+    background-position: -100px -500px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoMotm {
+    display: block;
+    background-position: -450px -550px;
+    width: 17px;
+    height: 17px;
+}
+
+.icogoal {
+    display: block;
+    background-position: -150px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoyellc {
+    display: block;
+    background-position: -48px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoredc {
+    display: block;
+    background-position: 2px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icosub {
+    display: block;
+    background-position: -99px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icosxi {
+    display: block;
+    background-position: -250px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icocs {
+    display: block;
+    background-position: -400px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icowhistle {
+    display: block;
+    background-position: -300px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icostad {
+    display: block;
+    background-position: -350px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoass {
+    display: block;
+    background-position: -200px -550px;
+    width: 16px;
+    height: 16px;
+}
+
+.icoPitchOff {
+    display: block;
+    background-position: -50px -650px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoPitchOn {
+    display: block;
+    background-position: -100px -650px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoTableOff {
+    display: block;
+    background-position: -50px -700px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoTableOn {
+    display: block;
+    background-position: -100px -700px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoWorldG {
+    display: block;
+    background-position: -150px -750px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoWorldF {
+    display: block;
+    background-position: -200px -750px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoLockG {
+    display: block;
+    background-position: -150px -800px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoLockF {
+    display: block;
+    background-position: -200px -800px;
+    width: 35px;
+    height: 35px;
+}
+
+.icoFb {
+    display: block;
+    background-position: -0px -1050px;
+    width: 30px;
+    height: 30px;
+}
+
+.icoTw {
+    display: block;
+    background-position: -50px -1050px;
+    width: 30px;
+    height: 30px;
+}
+
+.icoHelp {
+    display: block;
+    background-position: -250px -1100px;
+    width: 15px;
+    height: 15px;
+}
+
+.icoClub {
+    display: block;
+    background-position: -100px -1300px;
+    width: 56px;
+    height: 65px;
+}
+
+.icoSuper {
+    display: block;
+    background-position: -200px -1300px;
+    width: 73px;
+    height: 55px;
+}
+
+.icoHome {
+    display: block;
+    background-position: 0 -1600px;
+    width: 43px;
+    height: 45px;
+}
+
+.icoTeam {
+    display: block;
+    background-position: -50px -1600px;
+    width: 52px;
+    height: 45px;
+}
+
+.icoPrize {
+    display: block;
+    background-position: -150px -1600px;
+    width: 38px;
+    height: 45px;
+}
+
+.icoLeague {
+    display: block;
+    background-position: -200px -1600px;
+    width: 33px;
+    height: 45px;
+}
+
+.icoPlay {
+    display: block;
+    background-position: -250px -1600px;
+    width: 30px;
+    height: 45px;
+}
+
+.icoStats {
+    display: block;
+    background-position: -300px -1600px;
+    width: 35px;
+    height: 45px;
+}
+
+.icoLead {
+    display: block;
+    background-position: -350px -1600px;
+    width: 40px;
+    height: 45px;
+}
+
+.icoFeed {
+    display: block;
+    background-position: -400px -1600px;
+    width: 45px;
+    height: 45px;
+}
+
+.icoLockW {
+    display: block;
+    background-position: -200px -798px;
+    width: 12px;
+    height: 19px;
+}
+
+.icoLockG {
+    display: block;
+    background-position: -150px -798px;
+    width: 12px;
+    height: 19px;
+}
+
+.icoWorldW {
+    display: block;
+    background-position: -200px -750px;
+    width: 19px;
+    height: 19px;
+}
+
+.icoWorldG {
+    display: block;
+    background-position: -150px -750px;
+    width: 19px;
+    height: 19px;
+}
+
+.leaguePriv {
+    display: block;
+    background-position: -0px -900px;
+    width: 98px;
+    height: 98px;
+}
+
+.leaguePriv.headtohead, div#leagueHeadIcon.leagueIcon.leaguePriv.classic.sprite, span.sprite.leaguePriv.classic {
+	display: block;
+	background-position: -599px -900px;
+	width: 98px;
+	height: 98px;
+}
+
+.leagueARS8000001 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/ARS.png') 0 0 no-repeat !important;
+}
+
+.leagueAVL8000002 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/AVL.png') 0 0 no-repeat !important;
+}
+
+.leagueCAR8000029 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/CAR.png') 0 0 no-repeat !important;
+}
+
+.leagueCHE8000004 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/CHE.png') 0 0 no-repeat !important;
+}
+
+.leagueCRY8000005 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/CRY.png') 0 0 no-repeat !important;
+}
+
+.leagueEVE8000006 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/EVE.png') 0 0 no-repeat !important;
+}
+
+.leagueFUL8000031 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/FUL.png') 0 0 no-repeat !important;
+}
+
+.leagueHUL8000007 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/HUL.png') 0 0 no-repeat !important;
+}
+
+.leagueLIV8000009 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/LIV.png') 0 0 no-repeat !important;
+}
+
+.leagueMCY8000010 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/MCY.png') 0 0 no-repeat !important;
+}
+
+.leagueMUN8000011 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/MUN.png') 0 0 no-repeat !important;
+}
+
+.leagueNEW8000012 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/NEW.png') 0 0 no-repeat !important;
+}
+
+.leagueNOR8000038 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/NOR.png') 0 0 no-repeat !important;
+}
+
+.leagueSOT8000014 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/SOT.png') 0 0 no-repeat !important;
+}
+
+.leagueSTO8000015 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/STO.png') 0 0 no-repeat !important;
+}
+
+.leagueSUN8000016 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/SUN.png') 0 0 no-repeat !important;
+}
+
+.leagueSWA8000017 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/SWA.png') 0 0 no-repeat !important;
+}
+
+.leagueTOT8000018 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/TOT.png') 0 0 no-repeat !important;
+}
+
+.leagueWBA8000019 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/WBA.png') 0 0 no-repeat !important;
+}
+
+.leagueWHM8000020 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/WHM.png') 0 0 no-repeat !important;
+}
+
+.leagueBIR8000021 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BIR.png') 0 0 no-repeat !important;
+}
+
+.leagueBLR8000021 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BLR.png') 0 0 no-repeat !important;
+}
+
+.leagueBLA8000023 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BLA.png') 0 0 no-repeat !important;
+}
+
+.leagueBOL8000024 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BOL.png') 0 0 no-repeat !important;
+}
+
+.leagueBOU8000025 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BOU.png') 0 0 no-repeat !important;
+}
+
+.leagueBTN8000027 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BTN.png') 0 0 no-repeat !important;
+}
+
+.leagueCHA8000028 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/CHA.png') 0 0 no-repeat !important;
+}
+
+.leagueDER8000030 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/DER.png') 0 0 no-repeat !important;
+}
+
+.leagueHUD8000032 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/HUD.png') 0 0 no-repeat !important;
+}
+
+.leagueIPS8000033 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/IPS.png') 0 0 no-repeat !important;
+}
+
+.leagueMID8000035 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/MID.png') 0 0 no-repeat !important;
+}
+
+.leagueMIL8000036 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/MIL.png') 0 0 no-repeat !important;
+}
+.leagueNOF8000037 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/NOF.png') 0 0 no-repeat !important;
+}
+
+.leagueQPR8000013 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/QPR.png') 0 0 no-repeat !important;
+}
+
+.leagueREA8000039 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/REA.png') 0 0 no-repeat !important;
+}
+
+.leagueSHW8000041 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/SHW.png') 0 0 no-repeat !important;
+}
+
+.leagueWAT8000042 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/WAT.png') 0 0 no-repeat !important;
+}
+
+.leagueWIG8000043 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/WIG.png') 0 0 no-repeat !important;
+}
+
+.leagueWLV8000044 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/WLV.png') 0 0 no-repeat !important;
+}
+
+.leagueBUR8000003 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BUR.png') 0 0 no-repeat !important;
+}
+
+.leagueLEI8000008 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/LEI.png') 0 0 no-repeat !important;
+}
+
+.leagueBRN8000026 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/BRN.png') 0 0 no-repeat !important;
+}
+
+.leagueRTH8000040 {
+	display: block;
+	width: 98px;
+	height: 98px;
+	background: url('https://content.fantasyfootball.skysports.com/stff2015/images/badges/bubble/RTH.png') 0 0 no-repeat !important;
+}
+
+.spriteTEMP {
+    background-image: url('../images/template/sprite_web.png');
+}
+
+.icoLeaderboard {
+    display: block;
+    background-position: 0 0;
+    width: 24px;
+    height: 24px;
+}
+
+.icoStats {
+    display: block;
+    background-position: -350px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.icoHome {
+    display: block;
+    background-position: -51px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.icoTeams {
+    display: block;
+    background-position: -101px 0;
+    width: 31px;
+    height: 24px;
+}
+
+.icoCup {
+    display: block;
+    background-position: -150px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.icoHelp {
+    display: block;
+    background-position: -250px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.icoLeagues {
+    display: block;
+    background-position: -300px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.icoClub {
+    display: block;
+    background-position: -300px 0;
+    width: 24px;
+    height: 24px;
+}
+
+.icoTwitter {
+    display: block;
+    background-position: -50px -50px;
+    width: 24px;
+    height: 24px;
+}
+
+.icoFacebook {
+    display: block;
+    background-position: 0 -50px;
+    width: 24px;
+    height: 24px;
+}
+
+.league8000104 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -112px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+.league8000101 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') no-repeat;
+	background-size: 550px;
+	width: 100px;
+	height: 100px;
+}
+
+.league8000102 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -226px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+.league8000100 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -340px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+.league8000103 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -450px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+.STFFLeagueAccord li > h4 {
+    padding-left: 14px;
+    height: 46px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #CBCACA;
+    line-height: 46px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "SkyNews", Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.STFFLeagueAccord h4 span {
+    position: absolute;
+    top: 16px;
+    right: 14px;
+}
+
+.STFFLeagueAccord li.on h4 span {
+    position: absolute;
+    top: 16px;
+    right: 14px;
+    background-position: -150px -50px;
+}
+
+.STFFLeagueCol1 {
+    height: 200px;
+    width: 20%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.STFFLeagueCol1 h3 {
+    position: absolute;
+    left: 14px;
+    top: 130px;
+    font-family: "SkyNews", Arial, sans-serif;
+    color: #000;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.STFFLeagueCol1 h4 {
+    position: absolute;
+    left: 14px;
+    top: 140px;
+    font-family: "SkyNews", Arial, sans-serif;
+    color: #032392;
+    font-size: 30px;
+}
+
+.STFFLeagueCol1 span {
+    position: absolute;
+    left: 14px;
+    top: 14px;
+}
+
+.STFFLeagueCol2 {
+    height: 200px;
+    width: 80%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.STFFLeagueCol2 p {
+    margin: 0 14px 14px 14px;
+}
+
+.STFFLeagueCol2 h4 {
+    margin: 14px 14px 0 14px;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.STFFLeagueCol2 .button {
+    margin: 0;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+}
+
+.STFFLeagueAccord h4.doubleHeight {
+    line-height: 18px;
+    padding-top: 6px;
+    height: 40px;
+}
+
+#fixtprev {
+    position: absolute;
+    cursor: pointer;
+}
+
+#fixtnext {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+#STFFFixtCont a {
+    text-decoration: none;
+}
+
+#STFFFixtCont table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#STFFFixtCont table.accord-up, #STFFFixtCont table.accord-down {
+    cursor: pointer;
+}
+
+#STFFFixtCont tr.lgreygrad td {
+    border-top: 1px solid #CBCACA;
+}
+
+#STFFFixtCont td {
+    line-height: 28px;
+    color: #525252;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#STFFFixtCont td a.fixtlnk {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 28px;
+    color: #525252;
+}
+
+#STFFFixtCont td.fixt1 {
+    width: 40%;
+    text-align: right;
+    text-overflow: ellipsis;
+}
+
+#STFFFixtCont td.fixt2 {
+    width: 16%;
+    text-align: center;
+    font-weight: bold;
+}
+
+#STFFFixtCont td.fixt2 span {
+    color: #de0000;
+}
+
+#STFFFixtCont td.fixt3 {
+    width: 30%;
+    text-overflow: ellipsis;
+}
+
+#STFFFixtCont td.fixt4 {
+    width: 10%;
+    text-align: center;
+}
+
+#STFFFixtCont td.fixt4 span {
+    display: block;
+    margin: 4px auto;
+    width: 16px;
+    height: 16px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/header/sff_sprite2.png') 16px 16px;
+}
+
+#STFFFixtCont table.accord-up td.fixt4 span {
+    background-position: -100px -50px;
+}
+
+#STFFFixtCont table.accord-down td.fixt4 span {
+    background-position: -150px -50px;
+}
+
+#STFFFixtCont .STFFsectHead {
+    text-align: center;
+    position: relative;
+    text-indent: 0;
+}
+
+div.errorMsg {
+    width: 90%;
+    margin: 9px auto;
+    border: 1px solid #e70204;
+    border-radius: 3px;
+    background: #FFE6E6;
+}
+
+div.errorMsg h2 {
+    width: 90%;
+    height: 25px;
+    line-height: 25px;
+    margin: 9px auto 0 auto;
+    color: #e70204;
+    font-family: 'SkyNews', arial, sans-serif;
+    font-size: 20px;
+    clear: both;
+    overflow: hidden;
+}
+
+div.errorMsg h2 span {
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+div.errorMsg p {
+    color: #e70204;
+    width: 90%;
+    margin: 9px auto 9px auto;
+}
+
+div.alertMsg {
+    width: 90%;
+    margin: 9px auto;
+    border: 1px solid #589CDA;
+    border-radius: 3px;
+    background: #D7E8F7;
+}
+
+div.alertMsg h2 {
+    width: 90%;
+    height: 25px;
+    line-height: 25px;
+    margin: 9px auto 0 auto;
+    color: #589CDA;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 20px;
+    clear: both;
+    overflow: hidden;
+}
+
+div.alertMsg h2 span {
+    margin: 0 5px 0 0;
+    float: left;
+}
+
+div.alertMsg p {
+    color: #589CDA;
+    width: 90%;
+    margin: 9px auto 9px auto;
+}
+
+#STFFTeamSelect {
+    display: block;
+    width: 996px;
+    height: 605px;
+    position: relative;
+    background: #EBEFF5;
+    overflow: hidden;
+}
+
+#STFFTeamSelect .STFFLeftCol {
+    width: 330px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+    height: 540px;
+    background: #565656;
+}
+
+table.STFFPlayerList {
+    table-layout: fixed;
+    width: 313px;
+}
+
+table.STFFPlayerList th {
+    text-align: left;
+    cursor: pointer;
+    text-indent: 9px;
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.plasearch {
+    display: none;
+}
+
+#STFFPlayerDataOpts {
+    padding: 5px 9px;
+    width: 312px;
+    height: 27px;
+    overflow: hidden;
+}
+
+#STFFTeamSelect #player-accordion {
+}
+
+#STFFTeamSelect #player-accordion h4 {
+    cursor: pointer;
+    width: 330px;
+    text-indent: 9px;
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#STFFTeamSelect #player-accordion h4 span {
+    float: right;
+    margin: 5px 9px;
+}
+
+#STFFTeamSelect #player-accordion li.on h4 span {
+    background-position: -100px -0px;
+}
+
+.plalist {
+    background: #fff;
+    height: 363px;
+    overflow: auto;
+}
+
+.plalist table {
+    table-layout: fixed;
+    width: 312px;
+}
+
+.plalist table td {
+    cursor: pointer;
+    text-indent: 9px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.plalist table td a.icoStat {
+    text-indent: -9999px;
+}
+
+.plalist table tr.picked {
+    background: #ebebeb;
+    color: #515151;
+
+}
+
+.plalist table td.lname span {
+    margin: 4px 0 0 7px;
+    float: left;
+}
+
+.plalist table tr.unavail td {
+    color: #A7A7A7 !important;
+}
+
+.lname {
+    width: 30%;
+    text-align: left;
+}
+
+.lclub, .lpric, .lpts, .lstat {
+    width: 10%;
+}
+
+.lpts {
+	width: 14%;
+
+}
+
+.lstat {
+    position: relative;
+	width: 10%;
+}
+
+.lstat a {
+    position: relative;
+    margin: 4px auto;
+}
+.newTeamForm {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.newTeamForm input, .newTeamForm select {
+    height: 22px;
+    line-height: 22px;
+    width: 185px;
+    margin: 25px 0 20px 25px;
+    background: #EDEDED;
+    border-radius: 3px;
+    text-indent: 10px;
+    border: 0;
+}
+
+.newTeamForm select {
+    text-indent: 0;
+}
+
+#stff-pitch {
+    width: 666px;
+    height: 535px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    overflow: hidden;
+    background-position: left center;
+}
+
+#STFFBudget {
+    width: 332px;
+    left: 670px;
+}
+
+#tranHead {
+    left: 520px;
+}
+
+#autosel, #submit {
+    position: absolute;
+    bottom: 9px;
+}
+
+#resetteam, #saveteam {
+    position: absolute;
+    top: 14px;
+}
+
+#autosel {
+    left: 400px;
+}
+
+#submit {
+    left: 520px;
+}
+
+#resetteam {
+    left: 580px;
+}
+
+#saveteam {
+    left: 470px;
+}
+
+#new-team-form {
+    position: absolute;
+    width: 640px;
+    left: 14px;
+    bottom: 50px;
+}
+
+#new-team-form p {
+    color: #515151;
+    font-size: 10px;
+}
+
+#lterms {
+    text-align: center;
+}
+
+.stff-first-hide {
+    display: none;
+}
+
+#STFFTeamSelect .myteam-backgrounds {
+    position: absolute;
+    top: 70px;
+    left: 0;
+}
+
+#lterms a {
+    color: #515151;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.pitch-switcher {
+    position: absolute;
+    float: left;
+    z-index: 10;
+    overflow: hidden;
+    width: 621px;
+    height: 21px;
+    top: 399px;
+    left: 23px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/team/pitch-switcher.png') 100% 100% no-repeat;
+    cursor: pointer;
+    -webkit-box-shadow: inset 1px 4px 9px -6px #000000;
+    box-shadow: inset 1px 4px 9px -6px #000000;
+    -webkit-transition: height 0.2s ease-out;
+    -moz-transition: height 0.2s ease-out;
+    -o-transition: height 0.2s ease-out;
+    transition: height 0.2s ease-out;
+}
+
+.pitch-switcher.closed {
+    height: 21px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/pitches/pitch-switcher.png') 0 100% no-repeat;
+}
+
+.pitch-switcher ul.btn-group {
+    position: absolute;
+    bottom: 16px;
+    left: 208px;
+    display: none;
+    height: 22px;
+}
+
+.pitch-switcher.closed ul.btn-group {
+    position: relative;
+    top: -21px;
+    opacity: 0.6;
+}
+
+#DDCaptValue {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    width: 300px;
+}
+
+div.tranConfHead {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    overflow: hidden;
+}
+
+div.tranConfHead img {
+    position: absolute;
+    height: 100px;
+    right: -20px;
+    top: 10px;
+}
+
+div.tranConfHead h2 {
+    position: absolute;
+    left: 17px;
+    top: 30px;
+    color: red;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 75%;
+}
+
+ul.btn-group {
+}
+
+ul.btn-group li {
+    float: left;
+    margin: 0;
+}
+
+ul.btn-group li a {
+    font-size: 11px;
+    display: block;
+    background: #ffffff;  
+    background: -moz-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(51%, #e9e9e9), color-stop(100%, #e9e9e9)); 
+    background: -webkit-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%); 
+    background: -o-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%); 
+    background: -ms-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%); 
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0); 
+    border: 1px solid #cac9c9;
+    border-left: 1px solid #fff;
+    padding: 3px 5px;
+    color: #515151;
+}
+
+ul.btn-group li:first-child a {
+    border-left: 1px solid #cac9c9;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+ul.btn-group li:last-child a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ul.btn-group li.selected a {
+    background: #797878;  
+    background: -moz-linear-gradient(top, #797878 0, #908f8f 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #797878), color-stop(100%, #908f8f)); 
+    background: -webkit-linear-gradient(top, #797878 0, #908f8f 100%); 
+    background: -o-linear-gradient(top, #797878 0, #908f8f 100%); 
+    background: -ms-linear-gradient(top, #797878 0, #908f8f 100%); 
+    background: linear-gradient(to bottom, #797878 0, #908f8f 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#797878', endColorstr='#908f8f', GradientType=0); 
+    border: 1px solid #605f5f;
+    color: #fff;
+    -webkit-box-shadow: inset 0 0 3px #727171;
+    box-shadow: inset 0 0 3px #727171;
+}
+
+#pitch {
+    width: 620px;
+    height: 390px;
+    overflow: hidden;
+    position: absolute;
+    left: 23px;
+    top: 10px;
+}
+
+.myteam-backgrounds {
+    position: relative;
+    width: 996px;
+    height: 535px;
+    background: #000;
+}
+
+.myteam-backgrounds div, .pitch-tutorial {
+    width: 996px;
+    height: 535px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pitch-theme1 {
+    background: url("../images/template/pitches/pitch-default.jpg") 0 0 no-repeat;
+}
+
+.pitch-theme2 {
+    background: url("../images/template/pitches/pitch-gillette.jpg") 0 0 no-repeat;
+}
+
+.pitch-theme3 {
+    background: url("../images/template/pitches/pitch-sky.jpg") 0 0 no-repeat;
+}
+
+.pitch-theme4 {
+    background: url("../images/template/pitches/pitch-dry.jpg") 0 0 no-repeat;
+}
+
+.pitch-theme5 {
+    background: url("../images/template/pitches/pitch-indoor.jpg") 0 0 no-repeat;
+}
+
+.pitch-tutorial {
+    z-index: 500;
+    background: url("../images/team/pitch-preselection.jpg") 0 0 no-repeat;
+}
+
+.pla-icon {
+    position: absolute;
+    width: 71px;
+    height: 86px;
+    cursor:pointer;
+}
+
+.pla-icon img {
+    display: block;
+    position: absolute;
+    left: 11px;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    z-index: 10;
+    cursor:pointer;
+}
+
+.pla-name {
+    left: 3px;
+    white-space: nowrap;
+    width: 84px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    background-color: #353535;
+    position: absolute;
+    top: 55px;
+    overflow: hidden;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+.pla-pts {
+    left: 3px;
+    white-space: nowrap;
+    width: 84px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    overflow: hidden;
+    border-radius: 0 0 3px 3px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.player-sel .pla-name {
+    display: block !important;
+    z-index: 40;
+}
+
+.player-sel .pla-capt {
+    cursor: pointer;
+    position: absolute;
+    top: 39px;
+    left: 3px;
+    display: none;
+    z-index: 20;
+}
+
+.player-sel .pla-remove {
+    display: block !important;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: -16px;
+    z-index: 30;
+}
+
+.capt-sel {
+    display: block !important;
+}
+
+div.f1343 .icon1 {
+    top: 14px;
+    left: 262px;
+}
+
+div.f1343 .icon2 {
+    top: 99px;
+    left: 130px;
+}
+
+div.f1343 .icon3 {
+    top: 99px;
+    left: 262px;
+}
+
+div.f1343 .icon4 {
+    top: 99px;
+    left: 407px;
+}
+
+div.f1343 .icon5 {
+    top: 188px;
+    left: 92px;
+}
+
+div.f1343 .icon6 {
+    top: 188px;
+    left: 207px;
+}
+
+div.f1343 .icon7 {
+    top: 188px;
+    left: 322px;
+}
+
+div.f1343 .icon8 {
+    top: 188px;
+    left: 437px;
+}
+
+div.f1343 .icon9 {
+    top: 277px;
+    left: 92px;
+}
+
+div.f1343 .icon10 {
+    top: 277px;
+    left: 262px;
+}
+
+div.f1343 .icon11 {
+    top: 277px;
+    left: 440px;
+}
+
+div.f1442 .icon1 {
+    top: 14px;
+    left: 262px;
+}
+
+div.f1442 .icon1 {
+    top: 14px;
+    left: 262px;
+}
+
+div.f1442 .icon2 {
+    top: 99px;
+    left: 92px;
+}
+
+div.f1442 .icon3 {
+    top: 99px;
+    left: 207px;
+}
+
+div.f1442 .icon4 {
+    top: 99px;
+    left: 322px;
+}
+
+div.f1442 .icon5 {
+    top: 99px;
+    left: 437px;
+}
+
+div.f1442 .icon6 {
+    top: 188px;
+    left: 92px;
+}
+
+div.f1442 .icon7 {
+    top: 188px;
+    left: 207px;
+}
+
+div.f1442 .icon8 {
+    top: 188px;
+    left: 322px;
+}
+
+div.f1442 .icon9 {
+    top: 188px;
+    left: 437px;
+}
+
+div.f1442 .icon10 {
+    top: 277px;
+    left: 207px;
+}
+
+div.f1442 .icon11 {
+    top: 277px;
+    left: 322px;
+}
+
+div.f1433 .icon1 {
+    top: 10px;
+    left: 262px;
+}
+
+div.f1433 .icon2 {
+    top: 99px;
+    left: 92px;
+}
+
+div.f1433 .icon3 {
+    top: 99px;
+    left: 207px;
+}
+
+div.f1433 .icon4 {
+    top: 99px;
+    left: 322px;
+}
+
+div.f1433 .icon5 {
+    top: 99px;
+    left: 437px;
+}
+
+div.f1433 .icon6 {
+    top: 180px;
+    left: 130px;
+}
+
+div.f1433 .icon7 {
+    top: 180px;
+    left: 262px;
+}
+
+div.f1433 .icon8 {
+    top: 180px;
+    left: 407px;
+}
+
+div.f1433 .icon9 {
+    top: 277px;
+    left: 130px;
+}
+
+div.f1433 .icon10 {
+    top: 277px;
+    left: 262px;
+}
+
+div.f1433 .icon11 {
+    top: 277px;
+    left: 407px;
+}
+
+div.f1352 .icon1 {
+    top: 10px;
+    left: 262px;
+}
+
+div.f1352 .icon2 {
+    top: 99px;
+    left: 92px;
+}
+
+div.f1352 .icon3 {
+    top: 99px;
+    left: 262px;
+}
+
+div.f1352 .icon4 {
+    top: 99px;
+    left: 440px;
+}
+
+div.f1352 .icon5 {
+    top: 188px;
+    left: 50px;
+}
+
+div.f1352 .icon6 {
+    top: 188px;
+    left: 160px;
+}
+
+div.f1352 .icon7 {
+    top: 188px;
+    left: 262px;
+}
+
+div.f1352 .icon8 {
+    top: 188px;
+    left: 380px;
+}
+
+div.f1352 .icon9 {
+    top: 188px;
+    left: 490px;
+}
+
+div.f1352 .icon10 {
+    top: 277px;
+    left: 210px;
+}
+
+div.f1352 .icon11 {
+    top: 277px;
+    left: 322px;
+}
+
+div.f1451 .icon1 {
+    top: 10px;
+    left: 262px;
+}
+
+div.f1451 .icon2 {
+    top: 99px;
+    left: 92px;
+}
+
+div.f1451 .icon3 {
+    top: 99px;
+    left: 207px;
+}
+
+div.f1451 .icon4 {
+    top: 99px;
+    left: 322px;
+}
+
+div.f1451 .icon5 {
+    top: 99px;
+    left: 437px;
+}
+
+div.f1451 .icon6 {
+    top: 188px;
+    left: 50px;
+}
+
+div.f1451 .icon7 {
+    top: 188px;
+    left: 160px;
+}
+
+div.f1451 .icon8 {
+    top: 188px;
+    left: 262px;
+}
+
+div.f1451 .icon9 {
+    top: 188px;
+    left: 380px;
+}
+
+div.f1451 .icon10 {
+    top: 188px;
+    left: 490px;
+}
+
+div.f1451 .icon11 {
+    top: 277px;
+    left: 262px;
+}
+
+div.f1532 .icon1 {
+    top: 10px;
+    left: 262px;
+}
+
+div.f1532 .icon2 {
+    top: 99px;
+    left: 50px;
+}
+
+div.f1532 .icon3 {
+    top: 99px;
+    left: 160px;
+}
+
+div.f1532 .icon4 {
+    top: 99px;
+    left: 262px;
+}
+
+div.f1532 .icon5 {
+    top: 99px;
+    left: 380px;
+}
+
+div.f1532 .icon6 {
+    top: 99px;
+    left: 490px;
+}
+
+div.f1532 .icon7 {
+    top: 188px;
+    left: 92px;
+}
+
+div.f1532 .icon8 {
+    top: 188px;
+    left: 262px;
+}
+
+div.f1532 .icon9 {
+    top: 188px;
+    left: 440px;
+}
+
+div.f1532 .icon10 {
+    top: 277px;
+    left: 210px;
+}
+
+div.f1532 .icon11 {
+    top: 277px;
+    left: 322px;
+}
+
+.dropdown {
+    position: absolute;
+    z-index: 9999999;
+    display: none;
+}
+
+.dropdown .dropdown-menu,
+.dropdown .dropdown-panel {
+    min-width: 160px;
+    max-width: 360px;
+    list-style: none;
+    background: #FFF;
+    border: solid 1px rgba(0, 0, 0, .2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    overflow: visible;
+    padding: 4px 0;
+    margin: 0;
+}
+
+.dropdown .dropdown-panel {
+    padding: 10px;
+}
+
+.dropdown.dropdown-tip {
+    margin-top: 8px;
+}
+
+.dropdown.dropdown-tip:before {
+    position: absolute;
+    top: -6px;
+    left: 9px;
+    content: '';
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #CCC;
+    border-bottom-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.dropdown.dropdown-tip.dropdown-anchor-right:before {
+    left: auto;
+    right: 9px;
+}
+
+.dropdown.dropdown-tip:after {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    content: '';
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #FFF;
+    display: inline-block;
+}
+
+.dropdown.dropdown-tip.dropdown-anchor-right:after {
+    left: auto;
+    right: 10px;
+}
+
+.dropdown.dropdown-tip.dropdown-anchor-top:after {
+    top: auto;
+    bottom: -5px;
+    border-top: 6px solid #FFF;
+    border-bottom: none;
+}
+
+.dropdown.dropdown-tip.dropdown-anchor-top:before {
+    top: auto;
+    bottom: -6px;
+    border-top: 7px solid #CCC;
+    border-bottom: none;
+}
+
+.dropdown.dropdown-scroll .dropdown-menu,
+.dropdown.dropdown-scroll .dropdown-panel {
+    max-height: 358px;
+    overflow: auto;
+}
+
+.dropdown .dropdown-menu LI {
+    list-style: none;
+    padding: 0 0;
+    margin: 0;
+    line-height: 18px;
+    position: relative;
+}
+
+.dropdown .dropdown-menu LI > A,
+.dropdown .dropdown-menu LABEL {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    line-height: 18px;
+    padding: 3px 15px;
+    white-space: nowrap;
+}
+
+.dropdown .dropdown-menu li > a:hover,
+.dropdown .dropdown-menu label:hover {
+    background-color: #08C;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-menu .dropdown-divider {
+    font-size: 1px;
+    border-top: solid 1px #E5E5E5;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.greyDDThin {
+    text-indent: 9px;
+    display: block;
+    border: 1px solid #292525;
+    border-radius: 4px;
+    height: 25px;
+    line-height: 25px;
+    background: #4A4A4A;
+    box-shadow: inset 0 2px 2px -2px #fff;
+    font-size: 10px;
+    position: relative;
+}
+
+.greyDDThin span.DDtitle {
+    color: #BABABA;
+}
+
+.greyDDThin span.DDtext {
+    color: #fff;
+}
+
+.greyDDThin span.sprite {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+
+.greyDDFat {
+    display: block;
+    border-radius: 4px;
+    height: 45px;
+    font-size: 10px;
+    position: relative;
+    width: 300px;
+    font-family: 'SkyNews', arial, sans-serif;
+}
+
+.greyDDFat span.DDtitle {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #BABABA;
+    clear: both;
+    display: block;
+}
+
+.greyDDFat span.DDtext {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.greyDDFat span.sprite {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+.whiteDDThin {
+    text-indent: 9px;
+    display: block;
+    color: #515151;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 13px;
+    border-radius: 4px;
+    height: 28px;
+    line-height: 28px;
+    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(50%, #ffffff), color-stop(51%, #e9e9e9), color-stop(100%, #e9e9e9));
+    background: -webkit-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: -o-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: -ms-linear-gradient(top, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    background: linear-gradient(to bottom, #ffffff 0, #ffffff 50%, #e9e9e9 51%, #e9e9e9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e9e9e9', GradientType=0);
+    border: 1px solid #b1b1b1;
+    width: 200px;
+}
+
+.whiteDDThin span.sprite {
+    float: right;
+    position: relative;
+    top: 11px;
+}
+
+.whiteDDThin .icoDownSingle {
+    background-position: -300px -50px !important;
+}
+
+div.topPlayerHead {
+    width: 100%;
+    position: relative;
+    height: 125px;
+    overflow: hidden;
+}
+
+div.topPlayerHead h3.tphName {
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 18px;
+}
+
+div.topPlayerHead p.tphLabel {
+    position: absolute;
+    left: 30px;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+div.topPlayerHead p.tphValue {
+    position: absolute;
+    left: 100px;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 13px;
+}
+
+div.topPlayerHead p.tphPrice {
+    top: 45px;
+}
+
+div.topPlayerHead p.tphPoints {
+    top: 65px;
+}
+
+div.topPlayerHead p.tphPicked {
+    top: 85px;
+}
+
+div.topPlayerHead .imgCont img {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    right: 20px;
+    bottom: 0;
+    z-index: 2;
+}
+
+div.topPlayerHead .icoStat {
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    z-index: 100;
+    text-indent: -9999px;
+}
+
+div.topPlayerHead .icoLeft {
+    position: absolute;
+    top: 36px;
+    left: 0;
+    z-index: 100;
+}
+
+div.topPlayerHead .icoRight {
+    position: absolute;
+    top: 36px;
+    right: 0;
+    z-index: 100;
+}
+
+p.assitTip {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    color: #515151;
+    margin: 0 auto 9px auto;
+    width: 90%;
+}
+
+div#teamSlider {
+    padding: 12px;
+    overflow: hidden;
+    clear: both;
+}
+
+li.slideData {
+    width: 204px;
+    float: left;
+    overflow: hidden;
+}
+
+div.mstfSection {
+    width: 190px;
+    border-radius: 5px;
+    background: #fff;
+    height: 110px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    position: relative;
+    outline: 1px solid transparent;
+}
+
+/*#teamSlider ul.slideCont li.slideData div.mstfSection.frame2 {
+	opacity: 0.4;
+	background: #7e7e7e;
+	cursor: not-allowed;
+}
+
+#teamSlider ul.slideCont li.slideData div.mstfSection.frame2 a.header2.redBtn.center {
+	background: #7e7e7e;
+	background-image: none;
+	border: 1px solid #5c5c5c;
+	color: silver;
+	cursor:not-allowed;
+}
+
+#teamSlider ul.slideCont li.slideData div.mstfSection.frame2 h2.header2.blackgrad {
+	color: #7e7e7e;
+}*/
+
+div.mstfSection h2.blackgrad {
+    border-radius: 4px 4px 0 0;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 !important;
+}
+
+div.mstfSection a.redBtn, div.mstfSection a.greyBtn {
+    display: block;
+    border-radius: 0 0 5px 5px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    bottom: 0;
+    left: -1px;
+    width: 100%;
+    padding: 0 !important;
+    position: absolute;
+    cursor: pointer;
+}
+
+.teamLinkTable {
+    width: 190px;
+    table-layout: fixed;
+}
+
+.teamLinkTable td {
+    border-bottom: 1px solid #eeeeee;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 21px;
+    color: #19286f;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.teamLinkTable td span {
+    font-size: 11px;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    margin: 0 0 12px 0;
+    color: #B7B7B7;
+}
+
+.teamLinkTable td:first-child {
+    border-right: 1px solid #eeeeee;
+}
+
+.stff-stat-top3 {
+    width: 312px;
+    height: 140px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #D7D7D7;
+    margin: 5px 2px;
+    background: #D5D7DA;
+    border-radius: 5px;
+}
+
+.stff-stat-top3 h4 a {
+    color: #fff !important;
+    font-size: 12px !important;
+    float: right;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.stff-stat-top3 .stff-stat-top3-ico {
+    position: relative;
+    width: 104px;
+    height: 100px;
+    display: block;
+    overflow: hidden;
+    float: left;
+    cursor: pointer;
+}
+
+.stff-team-top3 .stff-stat-top3-ico {
+    cursor: auto !important;
+}
+
+.stff-stat-top3 .stff-stat-top3-nam {
+    position: absolute;
+    width: 104px;
+    text-align: center;
+    top: 67px;
+    left: 0;
+    white-space: nowrap;
+    color: #2E308F !important;
+    font-weight: bold;
+    font-size: 10px !important;
+}
+
+.stff-stat-top3 .stff-stat-top3-val {
+    position: absolute;
+    width: 104px;
+    text-align: center;
+    top: 82px;
+    left: 0;
+    font-weight: bold;
+}
+
+.stff-stat-top3 .stff-stat-top3-pos {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    font-size: 30px !important;
+    color: #9B9FA4 !important;
+    font-weight: bold;
+}
+
+.stff-stat-top3 .stff-stat-top3-img {
+    position: relative;
+    margin: 7px auto;
+    display: block;
+}
+
+.stff-stat-top3 .stff-stat-top3-ico {
+    background: #FFF;
+    background: -moz-linear-gradient(left, #FEFEFE, #D5D7DA);
+    background: -webkit-gradient(linear, left top, right top, from(#FEFEFE), to(#D5D7DA));
+    filter: progid:DXImageTransform.Microsoft.Gradient(StartColorStr='#FEFEFE', EndColorStr='#D5D7DA', GradientType=1);
+}
+
+.optionTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.optionTable td {
+    padding: 5px 9px;
+    height: 27px;
+    overflow: hidden;
+}
+
+#mstf-news {
+    position: relative;
+    margin-bottom: 9px;
+}
+
+.stff-article h1 {
+    font-family: 'SkyNews', arial, sans-serif;
+    font-weight: normal;
+    margin: 10px 14px 9px 14px;
+    padding: 0;
+    font-size: 30px;
+}
+
+.stff-article-body h2, .stff-article-body h3, .stff-article-body h4, .stff-article-body h5, .stff-article-body h6 {
+    margin: 10px 14px 9px 14px;
+    padding: 0;
+}
+
+.stff-article a {
+    font-weight: bold;
+    color: #d92231;
+}
+
+.stff-updated {
+    display: none;
+}
+
+.stff-abstract {
+    font-weight: bold;
+}
+
+.stff-article p {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    color: #515151;
+    margin: 0 14px 9px 14px;
+}
+
+table.STFFDataTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.STFFDataTable tr [title~="Club"]{
+    width: 40px;
+}
+
+table.STFFDataTable th, table.STFFDataTable td {
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 12px;
+    text-indent: 9px;
+}
+
+table.STFFDataTable th {
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 10px;
+    height: 25px;
+    line-height: 25px;
+}
+
+table.STFFDataTable td {
+    color: #515151;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 12px;
+}
+
+.sortable th {
+    cursor: pointer;
+}
+
+.STFFPointsBreak .name {
+    width: 20%;
+}
+
+.STFFPointsBreak td a.icoStat {
+    float: right;
+}
+
+#percSubHead th {
+    text-align: center !important;
+    width: 100px;
+    text-indent: 0;
+}
+
+#percSubHead th.percCol1 {
+    width: 224px;
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+#cboxOverlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#cboxMiddleLeft, #cboxBottomLeft {
+    clear: left;
+}
+
+#cboxContent {
+    position: relative;
+}
+
+#cboxLoadedContent {
+    overflow: auto;
+}
+
+#cboxTitle {
+    margin: 0;
+}
+
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+    cursor: pointer;
+}
+
+.cboxPhoto {
+    float: left;
+    margin: auto;
+    border: 0;
+    display: block;
+}
+
+.cboxIframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+}
+
+#cboxOverlay {
+    background-color: #2f2f2f;
+}
+
+#cboxTopLeft {
+    width: 20px;
+    height: 20px;
+}
+
+#cboxTopRight {
+    width: 20px;
+    height: 20px;
+}
+
+#cboxBottomLeft {
+    width: 20px;
+    height: 20px;
+}
+
+#cboxBottomRight {
+    width: 20px;
+    height: 20px;
+}
+
+#cboxMiddleLeft {
+    width: 20px;
+}
+
+#cboxMiddleRight {
+    width: 20px;
+}
+
+#cboxTopCenter {
+    height: 20px;
+}
+
+#cboxBottomCenter {
+    height: 20px;
+}
+
+#cboxContent {
+    background: #fff;
+    border: 10px solid #fff;
+    -webkit-box-shadow: 1px 1px 30px #444;
+    box-shadow: 1px 1px 30px #444;
+    border-radius: 7px;
+}
+
+#cboxError {
+    padding: 50px;
+    border: 1px solid #ccc;
+}
+
+#cboxLoadedContent {
+    margin-bottom: 0;
+}
+
+#cboxTitle {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: #949494;
+}
+
+#cboxCurrent {
+    position: absolute;
+    bottom: 4px;
+    left: 58px;
+    color: #949494;
+}
+
+#cboxSlideshow {
+    position: absolute;
+    bottom: 4px;
+    right: 30px;
+    color: #0092ef;
+}
+
+#cboxPrevious {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/generic/controls.png') no-repeat -75px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+
+#cboxPrevious.hover {
+    background-position: -75px -25px;
+}
+
+#cboxNext {
+    position: absolute;
+    bottom: 0;
+    left: 27px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/generic/controls.png') no-repeat -50px 0;
+    width: 25px;
+    height: 25px;
+    text-indent: -9999px;
+}
+
+#cboxNext.hover {
+    background-position: -50px -25px;
+}
+
+#cboxLoadingOverlay {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/generic/loading_background.png') no-repeat center center;
+}
+
+#cboxLoadingGraphic {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/generic/loading.gif') no-repeat center center;
+}
+
+#cboxClose {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background: url('https://st1.skybet.com/static/lib/themes/sky-betting-gaming-neutral/img/fancybox/fancybox.png') no-repeat -40px 0;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    border: 0;
+}
+
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF);
+}
+
+#tableTran {
+    left: 850px;
+}
+
+#tableBudget {
+    left: 700px;
+}
+
+#tablePosition {
+    left: 550px;
+}
+
+#tableTotal {
+    left: 450px;
+}
+
+#tableWeek {
+    left: 350px;
+}
+
+#DDTeamSelect {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+}
+
+#DDTeamOpts .dropdown-menu {
+    width: 298px;
+}
+
+#DDTeamOpts .dropdown-menu li a {
+    display: block;
+    height: 45px;
+    font-size: 10px;
+    position: relative;
+    width: 100%;
+    font-family: "SkyNews", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#DDTeamOpts .dropdown-menu li a span.DDtitle {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: #03228E;
+    clear: both;
+    display: block;
+}
+
+#DDTeamOpts .dropdown-menu li a span.DDtext {
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    color: #7D7C7C;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#DDTeamOpts .dropdown-menu li a span.sprite {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+}
+
+#DDTeamOpts .dropdown-menu li a:hover {
+    background: #D3DDFE;
+}
+
+#DDTeamOpts .dropdown-menu li a:hover span.DDtext {
+    color: #03228E;
+}
+
+#teamNav {
+    width: 250px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#pointsNav {
+    width: 200px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+#table-view {
+    position: absolute;
+    top: 60px;
+    left: -700px;
+    width: 645px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#teamViewKey {
+    position: absolute;
+    bottom: 90px;
+    left: 100px;
+    width: 500px;
+}
+
+#table-view table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#table-view table th {
+    text-align: center;
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#table-view table td {
+    text-align: center;
+    color: #565656;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#table-view table td a {
+    color: grey;
+}
+
+#table-view table th a {
+    color: #fff;
+}
+
+#table-view table tr.flagUp td a {
+    color: red !important;
+    font-weight: bold;
+}
+
+#table-view table td:first-child, #table-view table th:first-child {
+    width: 25%;
+    text-indent: 9px;
+    text-align: left;
+}
+
+#table-view table td:first-child {
+    font-weight: bold;
+}
+
+#table-view table td span {
+    margin: 7px 5px 7px 0;
+    float: left;
+}
+
+.STFFMyTeam {
+    width: 996px;
+    height: 605px;
+    display: block;
+    position: relative;
+    background: #fff;
+    overflow: hidden;
+}
+
+#viewOpts {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+#viewOpts li {
+    float: left;
+    cursor: pointer;
+}
+
+ul.publicOpts {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+ul.publicOpts li {
+    position: relative;
+    float: left;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+ul.publicOpts li.greyon {
+    background: #919090;
+    color: #fff;
+    -webkit-box-shadow: inset 0 0 5px #5B5B5B;
+    box-shadow: inset 0 0 5px #5B5B5B;
+    border: 0;
+}
+
+ul.publicOpts li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+ul.publicOpts li:first-child span {
+    position: absolute;
+    top: 8px !important;
+    right: 11px !important;
+}
+
+ul.publicOpts li:last-child span {
+    position: absolute;
+    top: 8px !important;
+    right: 8px !important;
+}
+
+ul.publicOpts li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.lightText, .lightText a {
+    color: #BCBCBC !important;
+}
+
+.STFFfixtures {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.STFFfixtures .STFFsectHead {
+    color: #fff;
+    background: #393939;  
+    background: -moz-linear-gradient(top, #393939 0, #030303 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #393939), color-stop(100%, #030303)); 
+    background: -webkit-linear-gradient(top, #393939 0, #030303 100%); 
+    background: -o-linear-gradient(top, #393939 0, #030303 100%); 
+    background: -ms-linear-gradient(top, #393939 0, #030303 100%); 
+    background: linear-gradient(to bottom, #393939 0, #030303 100%); 
+}
+
+.STFFfixtures .STFFsectCont {
+    background: #fff;
+    overflow: hidden;
+    overflow-y:auto;
+    max-height:465px;
+    border: none;
+}
+
+table.mstfTabs {
+    width: 90%;
+    margin: 0 auto;
+    z-index: 900;
+}
+
+table.mstfTabs td {
+    height: 28px;
+    line-height: 28px;
+}
+
+table.mstfTabs td a {
+    display: block;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #5B5B5B;
+    border-left: 1px solid #CBCACA;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+table.mstfTabs td:first-child a {
+    border-radius: 5px 0 0 5px;
+    border-left: none;
+}
+
+table.mstfTabs td:last-child a {
+    border-radius: 0 5px 5px 0;
+}
+
+table.mstfTabs td a.greyon {
+    line-height: 30px;
+    background: #919090;
+    color: #fff;
+    -webkit-box-shadow: inset 0 0 5px #5B5B5B;
+    box-shadow: inset 0 0 5px #5B5B5B;
+    border: 0;
+}
+
+table.mstfTabs td a.greygrad {
+    color: #fff;
+}
+
+table.mstfTabs td a.blackgrad {
+    color: #fff;
+}
+
+table.mstfTabs td a span.icoLive {
+    text-indent: -9999px;
+    margin: 5px auto;
+}
+
+#pointsNav td {
+    width: 33%;
+}
+
+table.tranKey {
+    margin: 0 auto;
+    max-width: 440px;
+    width: 90%;
+}
+
+table.tranKey td {
+    color: #000;
+    font-size: 9px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+table.tranKey td span {
+    margin: 6px 4px 7px 0;
+    float: left;
+}
+
+.black .tranKey td {
+    color: #fff;
+}
+
+.statsPopup {
+    width: 600px;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+    color: #515151;
+}
+
+#StatsTabs ul.gfm-tabs {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+#StatsTabs ul.gfm-tabs li {
+    display: inline-block;
+    height: 30px;
+}
+
+#StatsTabs ul.gfm-tabs li a {
+    height: 16px;
+    line-height: 30px;
+    color: #C4C4C4;
+    padding: 7px 10px;
+    font-family: "SkyNews", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+
+#StatsTabs ul.gfm-tabs li.on {
+    color: #fff;
+    background: #393939;  
+    background: -moz-linear-gradient(top, #030303 0, #393939 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #030303), color-stop(100%, #393939)); 
+    background: -webkit-linear-gradient(top, #030303 0, #393939 100%); 
+    background: -o-linear-gradient(top, #030303 0, #393939 100%); 
+    background: -ms-linear-gradient(top, #030303 0, #393939 100%); 
+    background: linear-gradient(to bottom, #030303 0, #393939 100%); 
+}
+
+#StatsTabs ul.gfm-tabs li.on a {
+    color: #fff;
+}
+
+#StatsTabs .gfm-tab-content {
+    width: 100%;
+    height: 320px;
+    overflow: auto;
+}
+
+#StatsTabs table.fixtTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#StatsTabs table.fixtTable td {
+    height: 30px;
+    border-bottom: 1px solid #EBEBEB;
+    line-height: 30px;
+    text-indent: 9px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#StatsTabs table.fixtTable td:first-child {
+    padding-left: 17px;
+}
+
+#StatsTabs table.fixtTable td a {
+    font-weight: bold;
+    color: #d92231;
+}
+
+.statsPopup img.statsPopImg {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    top: 8px;
+    right: 14px;
+}
+
+.statsHead {
+    width: 100%;
+    height: 88px;
+    position: relative;
+}
+
+.statsPopup .statsHead h2 {
+    font-family: "SkyNews", Arial, sans-serif;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    font-size: 26px;
+    -webkit-font-smoothing: antialiased;
+    color: #000;
+}
+
+.statsPopup .statsHead h2 span {
+    color: #d92231;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.statsPopup .statsHead ul {
+    position: absolute;
+    top: 54px;
+    left: 14px;
+}
+
+.statsPopup .statsHead ul li {
+    float: left;
+    padding-right: 20px;
+    font-size: 13px;
+    color: #515151;
+}
+
+.statsPopup .statsHead ul li span {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+div.playerStatsHOlder {
+    width: 600px;
+    background: #d3d3d3;
+    background: #d3d3d3;
+    padding: 20px 0 10px;
+    height: 210px;
+}
+
+table.mtrfGraph {
+    display: block;
+    width: 560px;
+    background: #d3d3d3;
+    border-top: 1px solid #bbbbbb;
+    height: 200px;
+}
+
+table.mtrfGraph tr:first-child td {
+    padding-top: 5px;
+}
+
+table.mtrfGraph td {
+    white-space: nowrap;
+    vertical-align: bottom;
+    overflow: hidden;
+    height: 200px;
+}
+
+table.mtrfGraph td div {
+    width: 100%;
+    max-height: 200px;
+    background: #828282;
+    background: -moz-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #828282), color-stop(100%, #515151)); 
+    background: -webkit-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -o-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -ms-linear-gradient(left, #828282 0, #515151 100%); 
+    background: linear-gradient(to right, #828282 0, #515151 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#828282', endColorstr='#515151', GradientType=1); 
+}
+
+table.mtrfGraphPlayer {
+    float: left;
+    width: 530px;
+    background: #d3d3d3;
+    height: 20px;
+    display: none;
+}
+
+table.mtrfGraphPlayer tr td:first-child {
+    width: 27px;
+    font-size: 9px;
+}
+
+table.mtrfGraphPlayer tr td:first-child span {
+    width: 29px;
+}
+
+table.mtrfGraphPlayer tr:first-child td {
+    padding-top: 0;
+}
+
+table.mtrfGraphPlayer tr:nth-child(2) {
+    border-top: 1px solid #000;
+}
+
+table.mtrfGraphPlayer tr:nth-child(3) td {
+    height: 15px;
+    font-size: 9px;
+    text-align: center;
+}
+
+table.mtrfGraphPlayer tr:nth-child(4) td {
+    height: 15px;
+    font-size: 10px;
+    text-align: center;
+}
+
+table.mtrfGraphPlayer td {
+    white-space: nowrap;
+    vertical-align: bottom;
+    overflow: hidden;
+    height: 166px;
+}
+
+table.mtrfGraphPlayer tr:nth-child(2) td {
+    height: 33px;
+    position: relative;
+}
+
+table.mtrfGraphPlayer td span {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-height: 166px;
+    background: #828282;
+    background: -moz-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #828282), color-stop(100%, #515151)); 
+    background: -webkit-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -o-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -ms-linear-gradient(left, #828282 0, #515151 100%); 
+    background: linear-gradient(to right, #828282 0, #515151 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#828282', endColorstr='#515151', GradientType=1); 
+}
+
+table.mtrfGraphPlayer td span .graphNegative {
+    max-height: 33px;
+    background: #ff9191;
+    background: -moz-linear-gradient(top, #ff9191 0, #af4b4b 100%) !important; 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9191), color-stop(100%, #af4b4b)) !important; 
+    background: -webkit-linear-gradient(top, #ff9191 0, #af4b4b 100%) !important; 
+    background: -o-linear-gradient(top, #ff9191 0, #af4b4b 100%) !important; 
+    background: -ms-linear-gradient(top, #ff9191 0, #af4b4b 100%) !important; 
+    background: linear-gradient(to bottom, #ff9191 0, #af4b4b 100%) !important; 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9191', endColorstr='#af4b4b', GradientType=0) !important; 
+}
+
+table.mtrfGraphPlayer tr:first-child td .graphArrowContainer {
+    height: 70px;
+    width: 28px;
+    float: left;
+    background: transparent;
+    padding-top: 42px;
+    border-right: 1px solid #000;
+}
+
+table.mtrfGraphPlayer td span .graphYAxisSteps {
+    width: 27px;
+    height: 26px;
+    border-right: 1px solid #000;
+    background: transparent;
+    font-size: 9px;
+    position: relative;
+}
+
+table.mtrfGraphPlayer td span .graphYAxisSteps span {
+    position: absolute;
+    bottom: 5px;
+}
+
+td.negativeYAxis {
+    background: transparent;
+
+}
+
+div.negativeYAxis {
+    float: left;
+    background: transparent;
+    border-right: 1px solid #000;
+    position: relative;
+}
+
+div.negativeYAxis span {
+    position: absolute;
+    bottom: 0;
+}
+
+div.statsGraphPlyr {
+    display: block;
+    position: relative;
+    width: 537px;
+    background: #d3d3d3;
+    height: 210px;
+    margin: 0 auto;
+    font-size: 9px;
+}
+
+div.statsGraphPlyr div.yAxis {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 1px;
+    height: 175px;
+    border-left: 1px solid #000;
+}
+
+div.statsGraphPlyr div.xAxis {
+    display: block;
+    position: absolute;
+    top: 142px;
+    left: 0;
+    width: 537px;
+    height: 1px;
+    border-top: 1px solid #000;
+}
+
+div.statsGraphPlyr ul.xAxisScale {
+    display: block;
+    position: absolute;
+    list-style: none;
+    top: 185px;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+div.statsGraphPlyr ul.xAxisScale li.xAxisVal {
+    display: block;
+    position: absolute;
+    width: 12px;
+    top: 0;
+    text-align: center;
+}
+
+div.statsGraphPlyr ul.yAxisScale {
+    display: block;
+    position: absolute;
+    list-style: none;
+    top: 10px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+div.statsGraphPlyr ul.yAxisScale li.yAxisVal {
+    display: block;
+    position: absolute;
+    width: 30px;
+    left: 0;
+    text-align: left;
+    margin-top: -6px;
+}
+
+div.statsGraphPlyr div.yAxisLbl {
+    display: block;
+    position: absolute;
+    list-style: none;
+    top: -10px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    text-align: center;
+}
+
+div.statsGraphPlyr div.xAxisLbl {
+    display: block;
+    position: absolute;
+    list-style: none;
+    top: 200px;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+    text-align: center;
+}
+
+div.statsGraphPlyr div.graphBars {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    height: 200px;
+}
+
+div.statsGraphPlyr div.barPositive {
+    display: block;
+    position: absolute;
+    width: 13px;
+    bottom: 68px;
+    background: #828282;  
+    background: -moz-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #828282), color-stop(100%, #515151)); 
+    background: -webkit-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -o-linear-gradient(left, #828282 0, #515151 100%); 
+    background: -ms-linear-gradient(left, #828282 0, #515151 100%); 
+    background: linear-gradient(to right, #828282 0, #515151 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#828282', endColorstr='#515151', GradientType=1); 
+}
+
+div.statsGraphPlyr div.barNegative {
+    display: block;
+    position: absolute;
+    width: 13px;
+    top: 133px;
+    background: #ff9191;  
+    background: -moz-linear-gradient(top, #ff9191 0, #af4b4b 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff9191), color-stop(100%, #af4b4b)); 
+    background: -webkit-linear-gradient(top, #ff9191 0, #af4b4b 100%); 
+    background: -o-linear-gradient(top, #ff9191 0, #af4b4b 100%); 
+    background: -ms-linear-gradient(top, #ff9191 0, #af4b4b 100%); 
+    background: linear-gradient(to bottom, #ff9191 0, #af4b4b 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9191', endColorstr='#af4b4b', GradientType=0); 
+}
+
+div.statsGraphPlyr .xAxisPos1 {
+    left: 0;
+}
+
+div.statsGraphPlyr .xAxisPos2 {
+    left: 13px;
+}
+
+div.statsGraphPlyr .xAxisPos3 {
+    left: 26px;
+}
+
+div.statsGraphPlyr .xAxisPos4 {
+    left: 39px;
+}
+
+div.statsGraphPlyr .xAxisPos5 {
+    left: 52px;
+}
+
+div.statsGraphPlyr .xAxisPos6 {
+    left: 65px;
+}
+
+div.statsGraphPlyr .xAxisPos7 {
+    left: 78px;
+}
+
+div.statsGraphPlyr .xAxisPos8 {
+    left: 91px;
+}
+
+div.statsGraphPlyr .xAxisPos9 {
+    left: 104px;
+}
+
+div.statsGraphPlyr .xAxisPos10 {
+    left: 117px;
+}
+
+div.statsGraphPlyr .xAxisPos11 {
+    left: 130px;
+}
+
+div.statsGraphPlyr .xAxisPos12 {
+    left: 143px;
+}
+
+div.statsGraphPlyr .xAxisPos13 {
+    left: 156px;
+}
+
+div.statsGraphPlyr .xAxisPos14 {
+    left: 169px;
+}
+
+div.statsGraphPlyr .xAxisPos15 {
+    left: 182px;
+}
+
+div.statsGraphPlyr .xAxisPos16 {
+    left: 195px;
+}
+
+div.statsGraphPlyr .xAxisPos17 {
+    left: 208px;
+}
+
+div.statsGraphPlyr .xAxisPos18 {
+    left: 221px;
+}
+
+div.statsGraphPlyr .xAxisPos19 {
+    left: 234px;
+}
+
+div.statsGraphPlyr .xAxisPos20 {
+    left: 247px;
+}
+
+div.statsGraphPlyr .xAxisPos21 {
+    left: 260px;
+}
+
+div.statsGraphPlyr .xAxisPos22 {
+    left: 273px;
+}
+
+div.statsGraphPlyr .xAxisPos23 {
+    left: 286px;
+}
+
+div.statsGraphPlyr .xAxisPos24 {
+    left: 299px;
+}
+
+div.statsGraphPlyr .xAxisPos25 {
+    left: 312px;
+}
+
+div.statsGraphPlyr .xAxisPos26 {
+    left: 325px;
+}
+
+div.statsGraphPlyr .xAxisPos27 {
+    left: 338px;
+}
+
+div.statsGraphPlyr .xAxisPos28 {
+    left: 351px;
+}
+
+div.statsGraphPlyr .xAxisPos29 {
+    left: 364px;
+}
+
+div.statsGraphPlyr .xAxisPos30 {
+    left: 377px;
+}
+
+div.statsGraphPlyr .xAxisPos31 {
+    left: 390px;
+}
+
+div.statsGraphPlyr .xAxisPos32 {
+    left: 403px;
+}
+
+div.statsGraphPlyr .xAxisPos33 {
+    left: 416px;
+}
+
+div.statsGraphPlyr .xAxisPos34 {
+    left: 429px;
+}
+
+div.statsGraphPlyr .xAxisPos35 {
+    left: 442px;
+}
+
+div.statsGraphPlyr .xAxisPos36 {
+    left: 455px;
+}
+
+div.statsGraphPlyr .xAxisPos37 {
+    left: 468px;
+}
+
+div.statsGraphPlyr .xAxisPos38 {
+    left: 481px;
+}
+
+div.statsGraphPlyr .xAxisPos39 {
+    left: 494px;
+}
+
+div.divForwardArrow {
+    margin-top: 1px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 8px;
+    border-color: transparent transparent transparent #095bb3;
+    line-height: 0;
+    _border-color: #000000 #000000 #000000 #095bb3;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+}
+
+#STFFOverStat {
+    table-layout: fixed;
+    width: 570px;
+    margin: auto 10px;
+}
+
+#STFFOverStat th {
+    color: #022087;
+    text-align: center;
+    font-family: 'SkyNews', arial, sans-serif;
+    font-size: 18px;
+    width: 33%;
+}
+
+#STFFOverStat td {
+    text-align: center;
+    font-family: 'SkyNews', arial, sans-serif;
+    font-size: 12px;
+    width: 33%;
+}
+
+#STFFOverStat td.centerBox, #STFFOverStat th.centerBox {
+    border-right: 1px solid #cdcccc;
+    border-left: 1px solid #cdcccc;
+}
+
+#statStat ul {
+    margin: 14px;
+}
+
+#statStat li {
+    display: block;
+    width: 33%;
+    height: 150px;
+    overflow: hidden;
+    float: left;
+}
+
+#statStat li h2 {
+    margin: 10px;
+}
+
+#statStat li table {
+    table-layout: fixed;
+    margin: 10px auto;
+    width: 90%;
+}
+
+#statStat li table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+}
+
+#statStat li table td:first-child {
+    width: 70%;
+}
+
+#statStat li table td:last-child {
+    text-align: right;
+}
+
+#statStat li.centerBox {
+    border-right: 1px solid #cdcccc;
+    border-left: 1px solid #cdcccc;
+}
+
+#statStat li.topBox {
+    border-bottom: 1px solid grey;
+}
+
+#plaOpts {
+    width: 590px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+#plaOpts a.blackBtn {
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    margin: 0;
+    line-height: 30px;
+}
+
+#plaOpts a.whiteBtn {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    margin: 0;
+    line-height: 30px;
+    width: 150px;
+}
+
+#plaOpts a.redBtn {
+    position: absolute;
+    left: 14px;
+    top: 10px;
+    margin: 0;
+    line-height: 30px;
+    width: 150px;
+}
+
+#plaOpts a.yellowBtn {
+    position: absolute;
+    right: 154px;
+    top: 10px;
+    margin: 0;
+    line-height: 30px;
+}
+
+table.betTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.betTable th, table.betTable td {
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 12px;
+}
+
+table.betTable th {
+    background: #EBEFF5;
+    border-left: 1px solid #CAD6E8;
+    font-weight: bold;
+    color: #515151;
+}
+
+table.betTable th:first-child, table.betTable td:first-child {
+    width: 70%;
+    padding-left: 9px;
+}
+
+table.betTable td {
+    border-bottom: 1px solid #f0f0f0;
+    color: #565656;
+}
+
+table.betTable td:last-child {
+    color: red;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 9px;
+}
+
+table.betTable th:last-child {
+    text-align: right;
+    padding-right: 9px;
+}
+
+table.leagueTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.leagueTable th, table.leagueTable td {
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
+    padding-left: 9px;
+    color: #b1b1b1;
+}
+
+table.leagueTable th {
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+table.leagueTable th:first-child, table.leagueTable td:first-child {
+    width: 15%;
+    padding-left: 9px;
+}
+
+table.leagueTable td.ltName, table.leagueTable th.ltName {
+    width: 30%;
+}
+
+table.leagueTable td:first-child {
+    font-weight: bold;
+}
+
+table.leagueTable th:last-child, table.leagueTable td:last-child {
+    width: 10%;
+}
+
+#leaguePeriodTabs {
+    width: 300px;
+    position: absolute;
+    top: auto;
+    bottom: 14px;
+    left: 14px;
+}
+
+#leaguePeriodTabs td a {
+    border-left: 1px solid #000;
+}
+
+#leagueCelebTabs {
+    width: 200px;
+    position: absolute;
+    top: auto;
+    bottom: 14px;
+    left: 350px;
+}
+
+#leagueCelebTabs td a {
+    border-left: 1px solid #000;
+}
+
+#leagueJoinBtns {
+	bottom: 48px;
+	display: block;
+	padding-top: 8px;
+	padding-right: 14px;
+	position: absolute;
+	left: 1px;
+}
+
+#leagueJoinBtns a {
+    width: 150px;
+    height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: right;
+    margin-left: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#leagueHeadIcon {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+
+div#leagueHeadIcon.leagueIcon.sprite {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	background-position: -0px -900px;
+	width: 98px;
+	height: 98px;
+}
+
+div#leagueHeadIcon.leagueIcon.leaguePriv.headtohead.sprite {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	background-position: -599px -900px;
+	width: 98px;
+	height: 98px;
+}
+
+div#leagueHeadIcon.leagueIcon.league8000104 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -112px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+div#leagueHeadIcon.leagueIcon.league8000101 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') no-repeat;
+	background-size: 550px;
+	width: 100px;
+	height: 100px;
+}
+
+div#leagueHeadIcon.leagueIcon.league8000102 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -226px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+div#leagueHeadIcon.leagueIcon.league8000100 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -340px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+div#leagueHeadIcon.leagueIcon.league8000103 {
+    display: block;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/league_sprite.png') -450px / 550px no-repeat;
+	width: 100px;
+	height: 100px;
+}
+
+tr.clickable td {
+    color: #515151;
+}
+
+tr.clickable:hover {
+	cursor: pointer;
+	background: #ffffff;  
+	background: -moz-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eeeeee)); 
+	background: -webkit-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+	background: -o-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+	background: -ms-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+	background: linear-gradient(to bottom, #ffffff 0, #eeeeee 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0); 
+}
+
+td a { 
+    display: block;
+    color: #515151;
+}
+
+table.leaderTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+table.leaderTable th, table.leaderTable td {
+    height: 40px;
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
+    text-indent: 9px;
+    padding-left: 0;
+}
+
+table.leaderTable th {
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+table.leaderTable th:first-child, table.leaderTable td:first-child {
+    width: 15%;
+}
+
+table.leaderTable td:first-child {
+    font-weight: bold;
+}
+
+table.leaderTable th:last-child, table.leaderTable td:last-child {
+    width: 15%;
+}
+
+table.leaderTable .ltName {
+    width: 30%;
+}
+
+table.leaderTable .colvsm {
+    width: 10% !important;
+}
+
+table.leagueTable tr.clickable:hover {
+    cursor: pointer;
+    background: #ffffff;  
+    background: -moz-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #eeeeee)); 
+    background: -webkit-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+    background: -o-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+    background: -ms-linear-gradient(top, #ffffff 0, #eeeeee 100%); 
+    background: linear-gradient(to bottom, #ffffff 0, #eeeeee 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#eeeeee', GradientType=0); 
+}
+
+table.leagueTable tr.clickable td {
+    color: #515151;
+}
+
+#messeagepost textarea {
+    text-indent: 14px;
+    display: block;
+    width: 100%;
+    font-family: 'SkyNews', arial, sans-serif;
+    font-size: 15px;
+    height: 100px;
+    line-height: 28px;
+    margin: 5px auto;
+    border-radius: 3px;
+    background: #eeeeee;
+    color: #565656;
+    border: 1px solid #B9B9B9;
+}
+
+#messeagepost label {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    font-family: Helvetica, arial, sans-serif;
+}
+
+#messeagepost .button {
+    width: 100%;
+}
+
+#msg-cont h4 span {
+    float: right;
+    padding-right: 9px;
+}
+
+#msg-cont p.messageText {
+    padding: 14px;
+}
+
+#leagueInfo {
+    position: absolute;
+    top: 80px;
+    left: 0;
+}
+
+#leagueInfo td {
+    padding-left: 14px;
+    padding-right: 40px;
+    font-size: 12px;
+    color: #b1b1b1;
+    text-align: left;
+    height: 20px;
+    line-height: 20px;
+}
+
+#leagueHead h2 {
+    font-size: 30px;
+    position: absolute;
+    left: 14px;
+    top: 14px;
+    color: #fff;
+    font-family: "SkyNews", Arial, sans-serif;
+}
+
+#leagueHead h3 {
+    font-size: 14px;
+    position: absolute;
+    left: 14px;
+    top: 54px;
+    color: #b1b1b1;
+    font-family: "SkyNews", Arial, sans-serif;
+}
+
+.leagueForm p {
+    font-family: Arial, sans-serif;
+    line-height: 24px;
+    font-size: 13px;
+    color: #515151;
+    margin: 0 auto 9px auto;
+    width: 96%;
+}
+
+.leagueForm input[type=text], .leagueForm input[type=password], .leagueForm select {
+    padding-left: 2%;
+    display: block;
+    width: 87%;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 15px;
+    height: 28px;
+    line-height: 28px;
+    margin: 5px auto;
+    border-radius: 3px;
+    background: #eeeeee;
+    color: #565656;
+    border: 1px solid #B9B9B9;
+}
+
+.leagueForm label {
+    display: block;
+    width: 96%;
+    margin: 5px auto;
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    font-family: Arial, sans-serif;
+}
+
+ul.optSwitch {
+    width: 96%;
+    margin: 9px auto;
+}
+
+#joinPublicLeagueTypeSwitch {
+	width: 90%;
+}
+
+#joinLeaguePinContainer ul.sky-accordion.STFFLeagueAccord li.lgreygrad.on div.clear p {
+	width: 90%;
+}
+
+ul.optSwitch li {
+    width: 97%;
+    height: 40px;
+    line-height: 40px;
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #a8a8a8;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+ul.optSwitch li:first-child {
+    border-radius: 5px 5px 0 0;
+    border-bottom: 0;
+}
+
+ul.optSwitch li:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+form#joinLeague.leagueForm {
+	height: 680px;
+}
+
+form#joinLeague.leagueForm label{
+	font-family: "SkyNews", Arial, sans-serif;
+	color: #000;
+	font-size: 18px;
+}
+
+#joinLeaguePinContainer {
+	width: 96%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #a7a8a7;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	overflow: hidden;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-top: -1px;
+}
+
+h4.joinleague, h4.joinleague_two {
+	height: 40px !important;
+	line-height: 40px !important;
+	font-family: "SkyNews", Arial, sans-serif !important;
+	font-size: 16px !important;
+	padding-left: 2% !important;
+	border-bottom-style: none !important;
+	border-top-style: none !important;
+}
+
+#joinLeaguePinContainer ul.sky-accordion.STFFLeagueAccord li.lgreygrad h4.joinleague_two {
+	border-top: 1px solid #a6a8a6 !important;
+}
+
+#joinLeaguePinContainer ul.sky-accordion.STFFLeagueAccord li.lgreygrad.on {
+	background: #fff !important;
+	padding-bottom: 10px;
+}
+
+input#joinLeaguePin {
+	font-weight: normal !important;
+	font-style: normal !important; 
+}
+
+#joinLeaguePinContainer ul.sky-accordion.STFFLeagueAccord li.lgreygrad.on h4.joinleague {
+	color: #fff !important;
+	background: #797878;
+	background: -moz-linear-gradient(top, #797878 0, #919090 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #797878), color-stop(100%, #919090));
+	background: -webkit-linear-gradient(top, #797878 0, #919090 100%);
+	background: -o-linear-gradient(top, #797878 0, #919090 100%);
+	background: -ms-linear-gradient(top, #797878 0, #919090 100%);
+	background: linear-gradient(to bottom, #797878 0, #919090 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#797878, endColorstr=' #919090, GradientType=0);
+	border-style: none;
+    margin-bottom: 5px;
+}
+
+#joinLeaguePinContainer ul.sky-accordion.STFFLeagueAccord li.lgreygrad.on h4.joinleague_two {
+	color: #fff !important;
+	background: #797878;
+	background: -moz-linear-gradient(top, #797878 0, #919090 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #797878), color-stop(100%, #919090));
+	background: -webkit-linear-gradient(top, #797878 0, #919090 100%);
+	background: -o-linear-gradient(top, #797878 0, #919090 100%);
+	background: -ms-linear-gradient(top, #797878 0, #919090 100%);
+	background: linear-gradient(to bottom, #797878 0, #919090 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#797878, endColorstr=' #919090, GradientType=0);
+	border-style: none;
+	margin-bottom: 5px;
+}
+
+table.leagueData {
+    table-layout: fixed;
+    width: 90%;
+    margin: 9px auto;
+}
+
+table.leagueData th {
+    padding-left: 9px;
+    background: #eeeeee;
+    color: #000;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+table.leagueData td {
+    padding-left: 9px;
+    color: #565656;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#createLeagueBtn {
+    position: absolute;
+    top: 5px;
+    height: 45px;
+    right: 14px;
+    line-height: 45px;
+}
+
+#joinLeagueBtn {
+    position: absolute;
+    top: 5px;
+    height: 45px;
+    right: 154px;
+    line-height: 45px;
+}
+
+#shareLeagueBtn {
+    position: absolute;
+	right: 14px;
+	bottom: 7px;
+	line-height: 27px;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 28px;
+	margin-top: 0;
+	color: #373837;
+	width: 342px;
+}
+
+a#remove-.remove-me.button.greenBtn.smalltop {
+	position: absolute;
+	right: 176px;
+	bottom: 8px;
+	line-height: 27px;
+	padding-right: 10px;
+	padding-left: 10px;
+	height: 26px;
+	margin-top: 0;
+	width: 120px;
+	font-size: 13px;
+}
+
+#shareLeagueBtn_long {
+	line-height: 40px;
+	height: 40px;
+	font-size: 16px;
+	color: #373837;
+	width: 640px;
+	margin-top: 11.5px;
+}
+
+a#remove-.remove-me.button.greenBtn {
+	line-height: 40px;
+	height: 40px;
+	font-size: 16px;
+	width: 640px;
+	margin-top: 11.5px;
+}
+
+#joinLeagueSubmit, #createLeagueSubmit {
+    width: 96%;
+    margin: 14px auto;
+}
+
+#assitantArea .button {
+    width: 90%;
+    margin: 5px auto;
+}
+
+#awardsContainer {
+    width: 666px;
+    height: 535px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    overflow: hidden;
+}
+
+#stff-awards {
+    position: relative;
+    width: 996px;
+    height: 535px;
+    background: #000;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/team/stadium.jpg') 0 -100px no-repeat;
+}
+
+#stff-awards .awardShelf {
+    clear: both;
+    overflow: hidden;
+    width: 478px;
+    margin: 0 auto;
+}
+
+#stff-awards .awardShelf ul {
+    width: 100%;
+    clear: both;
+    height: 100px;
+}
+
+#stff-awards .awardShelf ul li {
+    display: block;
+    height: 100px;
+    width: 33%;
+    float: left;
+}
+
+#stff-awards .awardShelf ul li img {
+    display: block;
+    margin: 0 auto;
+}
+
+#stff-awards .awardHolder {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background: #9E9E9E;
+    color: #000;
+    line-height: 32px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    margin: 35px auto;
+    cursor:pointer;
+}
+
+#stff-awards .awardNav {
+    text-align: center;
+}
+
+#stff-awards .awardNav a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
+
+#stff-awards .awardNav span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: #9E9E9E;
+    margin: 6px;
+}
+
+#stff-awards .awardNav a.pageOn span {
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    margin: 5px 6px;
+}
+
+#stff-awards .plinth {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/awards/shelf.png') no-repeat;
+    display: block;
+    width: 478px;
+    height: 132px;
+    margin-top: -15px;
+    margin-bottom: -90px;
+}
+
+.modal {
+    border: 1px solid rgb(204, 204, 204);
+    background-color: rgb(255, 255, 255);
+    color: rgb(80, 80, 80);
+    width: 290px;
+    left: 50%;
+    height: auto;
+    margin-left: -150px;
+    position: absolute;
+    text-align: center;
+    z-index: 50;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+    padding: 20px 5px 20px;
+    -webkit-box-shadow: rgba(50, 50, 50, 0.74902) -2px 0 16px;
+    box-shadow: rgba(50, 50, 50, 0.74902) -2px 0 16px;
+    top: 200px;
+    margin-top: -73px;
+}
+
+.modal .icoLoggedClose {
+    float: right;
+    position: relative;
+    top: -30px;
+    left: 15px;
+}
+
+.modal .header1 {
+    text-transform: uppercase;
+}
+
+#badegeaward .button {
+    width: 90%;
+    margin: 10px auto;
+}
+
+.matesPopup {
+    background: #fff;
+    width: 460px;
+    overflow: hidden;
+}
+
+.matesPopup table {
+    width: 90%;
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+.matesPopup table td {
+    padding: 5px;
+}
+
+.matesPopup table td input {
+    height: 22px;
+    line-height: 22px;
+    width: 285px;
+    background: #EDEDED;
+    border-radius: 3px;
+    border: 0;
+    float: right;
+    text-indent: 10px;
+}
+
+.matesPopup .STFFsectCont {
+    padding-top: 10px;
+    height: 518px;
+    overflow-x: auto;
+}
+
+.matesPopup .STFFsectCont h3 {
+    width: 90%;
+    font-size: 14px;
+    margin: 0 auto;
+    font-family: SkyNews, Arial, sans-serif;
+}
+
+.matesPopup .STFFsectCont textarea {
+    display: block;
+    width: 90%;
+    font-size: 12px;
+    margin: 10px auto;
+    background: #EDEDED;
+    border-radius: 3px;
+    border: 0;
+    text-indent: 10px;
+}
+
+.advert {
+    width: 640px;
+    height: 287px;
+    border-radius: 5px;
+}
+
+.advert .advert-inner {
+    padding: 30px;
+}
+
+.advert .advert-inner h2 {
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 30px;
+    color: #032390;
+    margin-bottom: 8px;
+}
+
+.advert .advert-inner h3 {
+    font-family: "SkyNews", Arial, sans-serif;
+    font-size: 20px;
+    color: #032390;
+    margin-bottom: 8px;
+}
+
+.advert .advert-inner p {
+    line-height: 20px;
+    font-size: 13px;
+    color: #515151;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.advert .advert-inner p.advert-inner-mid-bn {
+    display: block;
+    float: left;
+    width: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin: 0;
+}
+
+.advert .advert-inner p.advert-inner-prenote {
+    margin: 0;
+    line-height: 13px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.advert .advert-inner .advert-inner-btns {
+    position: absolute;
+    bottom: 20px;
+}
+
+.advert .advert-inner-darkbg h2, .advert .advert-inner-darkbg h3 {
+    color: #fff;
+}
+
+.advert .advert-inner-darkbg p {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.bx-wrapper .bx-next {
+    right: 13px !important;
+}
+
+.button-flex {
+    width: auto;
+    float: left;
+    padding: 2px 11px 0;
+}
+
+.bx-wrapper {
+    position: relative;
+    margin: 14px 0 0 0;
+    padding: 0;
+    zoom: 1;
+}
+
+.bx-wrapper img {
+    max-width: 100%;
+    display: block;
+}
+
+.bx-wrapper .bx-viewport {
+    background: #fff;
+}
+
+.bx-controls {
+    position: relative;
+    top: -40px;
+    z-index: 100;
+}
+
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+.bx-wrapper .bx-loading {
+    min-height: 50px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/bx_loader.gif') center center no-repeat #fff;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+}
+
+.bx-wrapper .bx-pager {
+    text-align: center;
+    font-size: .85em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #666;
+}
+
+.bx-wrapper .bx-pager .bx-pager-item,
+.bx-wrapper .bx-controls-auto .bx-controls-auto-item {
+    display: inline-block;
+    zoom: 1;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: #666;
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    border-radius: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: #FFF;
+}
+
+.bx-wrapper .bx-prev {
+    left: 0;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/header/sff_sprite2.png') no-repeat 0 -153px;
+}
+
+.bx-wrapper .bx-next {
+    right: 0;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/header/sff_sprite2.png') no-repeat -51px -153px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: -108px;
+    margin-top: -16px;
+    outline: 0;
+    width: 28px;
+    height: 48px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+
+.bx-wrapper .bx-controls-direction a.disabled {
+    display: none;
+}
+
+.bx-wrapper .bx-controls-auto {
+    text-align: center;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -11px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+    background-position: -86px 0;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop {
+    display: block;
+    text-indent: -9999px;
+    width: 9px;
+    height: 11px;
+    outline: 0;
+    background: url(images/controls.png) -86px -44px no-repeat;
+    margin: 0 3px;
+}
+
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+    background-position: -86px -33px;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {
+    text-align: left;
+    width: 80%;
+}
+
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto {
+    right: 0;
+    width: 35px;
+}
+
+.bx-wrapper .bx-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #7c7c7c;
+    background: rgba(80, 80, 80, 0.75);
+    width: 100%;
+}
+
+.bx-wrapper .bx-caption span {
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: block;
+    font-size: .85em;
+    padding: 10px;
+}
+
+form#contact-form div.error {
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+form#contact-form div.error span {
+    display: block;
+    font-weight: bold;
+}
+
+form#contact-form div.error label.labelCheckbox {
+}
+
+form#contact-form fieldset {
+    clear: both;
+    padding: 10px 10px;
+}
+
+form#contact-form fieldset:first-child {
+    border: 0;
+}
+
+form#contact-form fieldset legend {
+    font-size: 1.4em;
+    margin: 0 0 0 0;
+    padding: 0 0;
+    font-weight: bold;
+    display: none;
+}
+
+form#contact-form fieldset div {
+    clear: both;
+    width: 100%;
+}
+
+form#contact-form div label {
+    display: block;
+    float: left;
+    width: 200px;
+    padding: 3px 5px;
+    margin: 0 0 5px 0;
+    text-align: right;
+}
+
+form#contact-form div small {
+    display: block;
+    margin: 0 0 5px 210px;
+    padding: 1px 0;
+    font-size: 0.9em;
+    zoom: 1;
+    width: 210px;
+    text-align: left;
+}
+
+form#contact-form div input.uc {
+    text-transform: uppercase;
+}
+
+form#contact-form div input.fc {
+    text-transform: capitalize;
+}
+
+form#contact-form div input.input-text, form div input.input-password {
+    width: 300px;
+    padding: 1px 3px;
+    margin: 0 0 0 0;
+}
+
+form#contact-form div textarea {
+    width: 308px;
+    height: 50px;
+    font-size: 13px;
+}
+
+form#contact-form div select.input-select {
+    width: 310px;
+    padding: 1px 3px;
+}
+
+form#contact-form div span {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    color: red;
+    display: none;
+    clear: both;
+}
+
+form#contact-form div.submit .button {
+    float: none;
+    display: inline;
+    cursor: pointer;
+}
+
+:root input[type="checkbox"].ios-switch {
+    position: absolute;
+    opacity: 0;
+}
+
+:root input[type="checkbox"].ios-switch + div {
+    display: inline-block;
+    vertical-align: middle;
+    width: 3em;
+    height: 1em;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 999px;
+    margin: 0 .5em;
+    background: white;
+    background-image: linear-gradient(rgba(0, 0, 0, .1), transparent), linear-gradient(90deg, hsl(83, 90%, 60%) 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    background-origin: border-box;
+    background-clip: border-box;
+    overflow: hidden;
+    transition-duration: .4s;
+    transition-property: padding, width, background-position, text-indent;
+    box-shadow: 0 .1em .1em rgba(0, 0, 0, .2) inset, 0 .45em 0 .1em rgba(0, 0, 0, .05) inset;
+    font-size: 150%;
+    cursor: pointer;
+}
+
+:root input[type="checkbox"].ios-switch:checked + div {
+    padding-left: 2em;
+    width: 1em;
+    background-position: 0 0;
+}
+
+:root input[type="checkbox"].ios-switch + div:before {
+    content: 'On';
+    float: left;
+    width: 1.65em;
+    height: 1.65em;
+    margin: -.1em;
+    border: 1px solid rgba(0, 0, 0, .35);
+    border-radius: inherit;
+    background: white;
+    background-image: linear-gradient(rgba(0, 0, 0, .2), transparent);
+    box-shadow: 0 .1em .1em .1em hsla(0, 0, 100%, .8) inset, 0 0 .5em rgba(0, 0, 0, .3);
+    color: white;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, .3);
+    text-indent: -2.5em;
+}
+
+:root input[type="checkbox"].ios-switch:active + div:before {
+    background-color: #eee;
+}
+
+:root input[type="checkbox"].ios-switch:focus + div {
+    box-shadow: 0 .1em .1em rgba(0, 0, 0, .2) inset, 0 .45em 0 .1em rgba(0, 0, 0, .05) inset, 0 0 .4em 1px rgba(255, 0, 0, .5);
+}
+
+:root input[type="checkbox"].ios-switch + div:before,
+:root input[type="checkbox"].ios-switch + div:after {
+    font: bold 60%/1.9 sans-serif;
+    text-transform: uppercase;
+}
+
+:root input[type="checkbox"].ios-switch + div:after {
+    content: 'Off';
+    float: left;
+    text-indent: .5em;
+    color: rgba(0, 0, 0, .45);
+    text-shadow: none;
+
+}
+
+.inviteTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.inviteTable td {
+    text-indent: 9px;
+    color: #565656;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.inviteTable td:last-child {
+    width: 25%;
+}
+
+ul.leaguePage {
+    height: 30px;
+    margin: 10px auto;
+    display: block;
+}
+
+ul.leaguePage li {
+    float: left;
+    margin-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+ul.leaguePage li a {
+    color: #515151;
+}
+
+ul.leaguePage li a:hover {
+    color: #de0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+ul.leaguePage li.pageOn a {
+    color: #de0000;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#liveCommentary {
+    height: 150px;
+    width: 638px;
+    overflow: auto;
+}
+
+#commentaryContent {
+    width: 620px;
+    position: relative;
+    overflow: hidden;
+}
+
+.comment {
+    position: relative;
+    width: 620px;
+    border-bottom: 1px solid #7D7D7D;
+    height: 30px;
+    overflow: hidden;
+}
+
+.comment .minute {
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.comment .icon {
+    position: absolute;
+    top: 6px;
+    left: 27px;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+.comment .text {
+    position: absolute;
+    top: 7px;
+    left: 50px;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.comment .text b {
+    font-weight: normal;
+    font-size: 11px;
+}
+
+.comment strong {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.comment span {
+    font-size: 11px;
+    color: red;
+}
+
+.comment .red {
+    background-position: 0 -550px;
+}
+
+.comment .yell {
+    background-position: -50px -550px;
+}
+
+.comment .sub {
+    background-position: -100px -550px;
+}
+
+.comment .goal {
+    background-position: -150px -550px;
+}
+
+.comment .ass {
+    background-position: -200px -550px;
+}
+
+.comment .sxi {
+    background-position: -250px -550px;
+}
+
+.comment .whistle {
+    background-position: -300px -550px;
+}
+
+.comment .stad {
+    background-position: -350px -550px;
+}
+
+.comment .cs {
+    background-position: 0 -80px;
+}
+
+.redgrad {
+    color: #fff;
+    background: #683028;
+    background: -moz-linear-gradient(top, #683028 0, #9a3731 49%, #93211a 50%, #c3110b 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #683028), color-stop(49%, #9a3731), color-stop(50%, #93211a), color-stop(100%, #c3110b));
+    background: -webkit-linear-gradient(top, #683028 0, #9a3731 49%, #93211a 50%, #c3110b 100%);
+    background: -o-linear-gradient(top, #683028 0, #9a3731 49%, #93211a 50%, #c3110b 100%);
+    background: linear-gradient(to bottom, #683028 0, #9a3731 49%, #93211a 50%, #c3110b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93211a', endColorstr='#c3110b', GradientType=0);
+}
+
+.msftFacts {
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+
+.msftFacts > table {
+    position: absolute;
+    top: 25px;
+    z-index: 99;
+    left: -57px;
+}
+
+.msftFacts > table td {
+    height: 20px;
+    line-height: 20px;
+}
+
+.msftFacts > table td:first-child {
+    width: 35%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.msftFacts > table td:last-child {
+    width: 35%;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.msftFacts div.tabsCont {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.msftFacts div.tabsCont tr {
+    background: transparent;
+}
+
+.msftFacts table {
+    width: 100%;
+    top: 34px;
+}
+
+.msftFacts h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+.msftFacts table tr {
+    background: #fff;
+}
+
+.msftFacts table td {
+    text-align: center;
+    color: #000;
+    font-family: 'SkyNews', arial, sans-serif;
+    font-size: 23px;
+    padding: 12px 0;
+    width: 25%;
+}
+
+.msftFacts table td.redgrad {
+    color: #fff;
+}
+
+.factHomeImg {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    z-index: 101;
+    height: 79px;
+}
+
+.factAwayImg {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    z-index: 102;
+    height: 79px;
+}
+
+.mstfFactTeam table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.mstfFactTeam table td {
+    text-align: right;
+    height: 25px;
+    line-height: 25px;
+    color: #525252;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mstfFactTeam table td a {
+    color: inherit;
+}
+
+.mstfFactTeam table td:first-child {
+    text-align: left !important;
+    width: 70%;
+    padding-left: 9px;
+}
+
+.mstfFactTeam table td:last-child {
+}
+
+.mstfFactTeam table td:last-child span {
+    float: right;
+    margin: 3px 5px;
+}
+
+.mstfFactTeam th {
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 12px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.mstfFactTeam th:first-child {
+    text-align: left !important;
+    width: 70%;
+    padding-left: 9px;
+}
+
+.mstfFactTeam th:last-child {
+    text-align: right;
+    padding-right: 9px;
+}
+
+.header1 .selNav {
+    float: right;
+    margin: 10px;
+}
+
+.matchfacts table.factinfo {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.matchfacts td {
+    width: 50%;
+    clear: both;
+    border-bottom: 0 !important;
+}
+
+.matchfacts ul {
+    width: 160px;
+    float: left;
+}
+
+.matchfacts li {
+    position: relative;
+    border-bottom: 1px solid #E9EDF0;
+    width: 286px;
+    height: 25px;
+    line-height: 25px;
+    background-repeat: no-repeat;
+    list-style: none;
+    margin: 2px 0 !important;
+    display: block;
+}
+
+.matchfacts ul.mf-home-data {
+    position: relative;
+    top: 0;
+    right: 10px;
+}
+
+.matchfacts ul.mf-home-data li {
+    text-align: right;
+}
+
+.matchfacts ul.mf-away-data {
+    position: relative;
+    top: 0;
+    left: 10px;
+}
+
+.matchfacts li span {
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+}
+
+.matchfacts ul.mf-away-data li {
+    padding-left: 30px;
+}
+
+.matchfacts ul.mf-away-data li span {
+    left: 5px;
+    top: 5px;
+}
+
+.matchfacts ul.mf-home-data li {
+    padding-right: 30px;
+}
+
+.matchfacts ul.mf-home-data li span {
+    right: 5px;
+    top: 5px;
+}
+
+.matchfacts li span.red {
+    background-position: 0 -550px;
+}
+
+.matchfacts li span.yell {
+    background-position: -50px -550px;
+}
+
+.matchfacts li span.sub {
+    background-position: -100px -550px;
+}
+
+.matchfacts li span.goal {
+    background-position: -150px -550px;
+}
+
+.matchfacts li span.ass {
+    background-position: -200px -550px;
+}
+
+.matchfacts li span.sxi {
+    background-position: -250px -550px;
+}
+
+.matchfacts li span.whistle {
+    background-position: -300px -550px;
+}
+
+.matchfacts li span.stad {
+    background-position: -350px -550px;
+}
+
+.matchfacts li span.cs {
+    background-position: 0 -80px;
+}
+
+#alertbox span.confirms {
+    float: left;
+    text-align: center;
+    background-color: #032392;
+    color: #9FA5BB;
+    display: block;
+    padding: 5px;
+    margin: 2px;
+    width: 60px;
+    cursor: pointer;
+}
+
+#alertbox span.confirms:hover {
+    color: #fff;
+}
+
+#SSKOout table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+#SSKOout table th, #SSKOout table td {
+    height: 30px;
+    line-height: 14px;
+    overflow: hidden;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 13px;
+    padding-left: 9px;
+}
+
+#SSKOout table th {
+    background: #565656;
+    color: #fff;
+    border-bottom: 1px solid #424242;
+    border-top: 1px solid #656464;
+    border-left: 1px solid #424242;
+    border-right: 1px solid #656464;
+    font-size: 12px;
+    height: 25px;
+    line-height: 14px;
+}
+
+#SSKOout table th:first-child, #SSKOout table td:first-child {
+    width: 20%;
+    padding-left: 9px;
+}
+
+#SSKOout table td:first-child {
+}
+
+#SSKOout table th:last-child, #SSKOout table td:last-child {
+    width: 15%;
+}
+
+#SSKOout table .ltName {
+    width: 30%;
+}
+
+#SSKOout table .colvsm {
+    width: 10% !important;
+}
+
+#SSKOout p {
+    padding: 10px;
+}
+
+#ko-final {
+    font-family: "SkyNews", Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    height: 844px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/KOcup_last16_bkg.gif') 170px 39px no-repeat #CECECE;
+    margin: 0 auto;
+}
+
+#ko-final .match_containerKO {
+    position: relative;
+    min-width: 190px;
+    min-height: 90px;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid #333;
+}
+
+#ko-final .teamnameKO {
+    display: block;
+    margin: 5px 0 0 5px;
+    font-size: 14px;
+    max-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-shadow: 1px 1px 0 #111;
+    filter: dropshadow(color=#111, offx=1, offy=1);
+}
+
+#ko-final .teammanagerKO {
+    display: block;
+    margin: 0 0 0 5px;
+    font-size: 10px;
+    max-width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#ko-final .scoreKO {
+    font-family: arial, sans-serif;
+    display: block;
+    float: right;
+    border-radius: 5px;
+    background: #eee;
+    color: #000;
+    -moz-box-shadow: inset 0 0 2px #5B5B5B;
+    -webkit-box-shadow: inset 0 0 2px #5B5B5B;
+    box-shadow: inset 0 0 2px #5B5B5B;
+    border: 0;
+    width: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-right: 6px;
+    margin-top: -30px;
+}
+
+#ko-final .team_twoKO .teamnameKO {
+    display: block;
+    margin: 0 0 0 5px;
+    text-shadow: 1px 1px 0 #111;
+    filter: dropshadow(color=#111, offx=1, offy=1);
+}
+
+#ko-final .team_twoKO .teammanagerKO {
+    display: block;
+    margin: 0 0 5px 5px;
+    font-size: 10px;
+}
+
+#ko-final .vsKO {
+    display: block;
+    width: 100%;
+    margin-left: 10px;
+    padding-bottom: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+}
+
+#ko-final .textKO_final {
+    padding: 2px 5px 2px 5px;
+    font-size: 12px;
+    border-bottom: 1px solid #333;
+    text-shadow: 1px 1px 0 #111;
+    filter: dropshadow(color=#111, offx=1, offy=1);
+}
+
+#ko-final #KOgame1 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#ko-final #KOgame2 {
+    position: absolute;
+    top: 100px;
+    left: 5px;
+}
+
+#ko-final #KOgame3 {
+    position: absolute;
+    top: 217px;
+    left: 5px;
+}
+
+#ko-final #KOgame4 {
+    position: absolute;
+    top: 312px;
+    left: 5px;
+}
+
+#ko-final #KOgame5 {
+    position: absolute;
+    top: 428px;
+    left: 5px;
+}
+
+#ko-final #KOgame6 {
+    position: absolute;
+    top: 523px;
+    left: 5px;
+}
+
+#ko-final #KOgame7 {
+    position: absolute;
+    top: 640px;
+    left: 5px;
+}
+
+#ko-final #KOgame8 {
+    position: absolute;
+    top: 737px;
+    left: 5px;
+}
+
+#ko-final #KOgame9 {
+    min-height:110px;
+    position: absolute;
+    top: 32px;
+    left: 215px;
+}
+
+#ko-final #KOgame10 {
+    min-height:110px;
+    position: absolute;
+    top: 260px;
+    left: 215px;
+}
+
+#ko-final #KOgame11 {
+    min-height:110px;
+    position: absolute;
+    top: 455px;
+    left: 215px;
+}
+
+#ko-final #KOgame12 {
+    min-height:110px;
+    position: absolute;
+    top: 683px;
+    left: 215px;
+}
+
+#ko-final #KOgame13 {
+    min-height:110px;
+    position: absolute;
+    top: 145px;
+    left: 320px;
+}
+
+#ko-final #KOgame14 {
+    min-height:110px;
+    position: absolute;
+    top: 568px;
+    left: 320px;
+}
+
+#ko-final #KOgame15 {
+    min-height:110px;
+    position: absolute;
+    top: 360px;
+    left: 432px;
+}
+
+p.no-tips {
+    color: #525252;
+    font-size: 13px;
+    padding: 9px;
+}
+
+#tab-1.STFFsectCont, #tab-2.STFFsectCont, #tab-3.STFFsectCont {
+    float: left;
+}
+
+#fixtureTeamMenu {
+    width: 308px;
+    background-color: #343534;
+    padding-left: 5px;
+    margin-bottom: 0;
+    float: none;
+    height: 24px;
+}
+
+#Skysidebar_tabs {
+    display: block;
+    max-height: 439px;
+    overflow-y: scroll;
+    float: left;
+}
+
+#Skysidebar_tabs ul {
+    width: 293px;
+    background-color: #343534;
+    padding-left: 5px;
+    margin-bottom: 0;
+    float: left;
+}
+
+#Skysidebar_tabs ul li, ul#fixtureTeamMenu li {
+    width: 90px;
+    float: left;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+}
+
+#Skysidebar_tabs ul li:first-child, ul#fixtureTeamMenu li:first-child {
+    width: 109px;
+}
+
+#Skysidebar_tabs ul li a, ul#fixtureTeamMenu li a {
+    color: #868786;
+    font-weight: bold;
+}
+
+#Skysidebar_tabs ul li.active a, ul#fixtureTeamMenu li.active a, #Skysidebar_tabs ul li a:hover, ul#fixtureTeamMenu li a:hover {
+    color: white;
+}
+
+.matchfact_summary {
+    padding-bottom: 5px;
+}
+
+.accord-content {
+    display: none;
+}
+
+ul.matchfact_details_left {
+    display: block;
+    list-style: none;
+    margin: 0 10px 5px 0 !important;
+    background-color: #fdfefd !important;
+    padding: 0 !important;
+    width: 144px !important;
+    float: left;
+}
+
+ul.matchfact_details_right {
+    display: block;
+    list-style: none;
+    margin-bottom: 5px !important;
+    margin-right: 0;
+    margin-top: 0;
+    background-color: #fdfefd !important;
+    padding: 0 !important;
+    width: 136px !important;
+    float: right;
+}
+
+ul.matchfact_details_left li {
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 135px !important;
+    margin-left: 0 !important;
+    text-align: right !important;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+ul.matchfact_details_right li {
+    height: 24px;
+    font-size: 12px;
+    line-height: 24px;
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 131px !important;
+    margin-left: 0 !important;
+    text-align: left !important;
+
+}
+
+ul.matchfact_details_left li:first-child, ul.matchfact_details_right li:first-child {
+    border-top-style: none;
+}
+
+ul.matchfact_details_left li div.iconholder {
+    float: left;
+    display: block;
+    width: auto;
+}
+
+ul.matchfact_details_right li div.iconholder {
+
+}
+
+ul.matchfact_details_right li div.iconholder {
+    float: right;
+    display: block;
+    width: auto;
+}
+
+.iconholder .red {
+    width: 16px;
+    display: block;
+    background-position: 0 -545px;
+    height: 24px;
+}
+
+.iconholder .yell {
+    width: 16px;
+    display: block;
+    background-position: -50px -545px;
+    height: 24px;
+}
+
+.iconholder .sub {
+    width: 16px;
+    display: block;
+    background-position: -100px -545px;
+    height: 24px;
+}
+
+.iconholder .goal {
+    width: 16px;
+    display: block;
+    background-position: -150px -545px;
+    height: 24px;
+}
+
+.iconholder .own-goal {
+    width: 16px;
+    display: block;
+    background-position: -400px -545px;
+    height: 24px;
+}
+
+.iconholder .ass {
+    width: 16px;
+    display: block;
+    background-position: -200px -545px;
+    height: 24px;
+}
+
+.iconholder .sxi {
+    width: 16px;
+    display: block;
+    background-position: -250px -545px;
+    height: 24px;
+}
+
+.iconholder .whistle {
+    width: 16px;
+    display: block;
+    background-position: -300px -545px;
+    height: 24px;
+}
+
+.iconholder .stad {
+    width: 16px;
+    display: block;
+    background-position: -350px -545px;
+    height: 24px;
+}
+
+.iconholder .cs {
+    width: 16px;
+    display: block;
+    background-position: 0 -80px;
+    height: 24px;
+}
+
+ul.matchfact_details_right li span.factplayer,
+ul.matchfact_details_left li span.factplayer {
+    display: block;
+    width: 110px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+span.manofthematchtitle {
+    font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    color: #525352;
+    display: block;
+    text-align: center;
+    clear: both;
+    margin-top: 5px;
+    float: left;
+    width: 100%;
+}
+
+span.manofthematchplayer {
+    font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    color: #139c13;
+    display: block;
+    text-align: center;
+    clear: both;
+}
+
+.matchfact_summary a.button.whiteBtn {
+    width: 280px;
+    font-size: 15px;
+    color: #525352;
+    margin-bottom: 5px;
+}
+
+.transferdetail_container {
+    width: 100%;
+    display: inline-block;
+}
+
+ul.transferdetails {
+    background-color: white !important;
+    padding-left: 0 !important;
+    width: 298px !important;
+    border-bottom: 1px solid #eff2f9;
+    float: left;
+    display: block !important;
+    clear: both !important;
+}
+
+ul.transferdetails li.playerout, ul.transferdetails li.playerin {
+    width: 298px !important;
+    color: #a6a6a9;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left !important;
+    text-indent: 25px;
+}
+
+ul.transferdetails li.playerout {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/team/transfer_sprite.png') 0 -41px no-repeat;
+}
+
+ul.transferdetails li.playerin {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/team/transfer_sprite.png') 0 10px no-repeat;
+}
+
+div.transferinfo {
+    width: 120px;
+    padding-right: 10px;
+    display: block;
+    float: right;
+    clear: both;
+}
+
+span.playerteamname {
+    text-align: center;
+    width: 31px;
+    display: block;
+    text-transform: uppercase;
+    float: left;
+    text-indent: 0;
+    font-weight: bold;
+}
+
+span.playercost {
+    text-align: center;
+    width: 31px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-indent: 0;
+    font-weight: bold;
+}
+
+.transferinfo a.sprite.icoStat {
+    display: block;
+    float: right;
+    margin-top: 2px;
+}
+
+li.injuryalert {
+    width: 271px !important;
+    font-weight: bold;
+    color: red;
+    float: left;
+    height: 20px;
+    clear: both;
+    line-height: 20px;
+    text-align: left !important;
+    padding-left: 40px;
+}
+
+li.formationupdate {
+    width: 270px !important;
+    color: #a6a6a9;
+    float: left;
+    padding-left: 25px;
+    line-height: 20px;
+    text-align: left !important;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/team/transfer_sprite.png') 0 -162px no-repeat;
+}
+
+li.playeralert {
+    width: 100%;
+    display: block;
+    padding-left: 25px;
+    text-align: left !important;
+}
+
+li.playeralert span.sprite {
+    float: left;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.performancesidebar .name {
+    width: 70%;
+}
+
+.performancesidebar .pointsCol {
+    width: 15%;
+    text-align: center;
+    text-indent: 0;
+}
+
+.performancesidebar .stats_btnCol a.sprite.icoStat {
+    margin-right: 10px;
+}
+
+#pointsInformation {
+    height: 80px;
+    transition: height 1s;
+    transition-timing-function: ease-in;
+    -webkit-transition: height 1s;
+    -webkit-transition-timing-function: ease-in;
+    overflow: hidden;
+}
+
+#pointsInformation .text-right {
+    text-align: right;
+}
+
+#pointsInformation .fl {
+    float: left;
+}
+
+#pointsInformation .brand {
+    font-family: 'SkyNews', arial, sans-serif;
+    font-weight: 400;
+}
+
+#pointsInformation .push-right {
+    margin-right: 18px;
+}
+
+#pointsInformation .push-left {
+    margin-left: 18px;
+}
+
+#pointsInformation .small-heading {
+    color: grey;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+
+#pointsInformation .pending-points h3 {
+    font-size: 18px;
+}
+
+#pointsInformation .update-text {
+    font-size: 13px;
+    line-height: 24px;
+    position: relative;
+    left: 500px;
+    top: -30px;
+}
+
+#pointsInformation .date-select {
+    font-size: 16px !important;
+}
+
+#pointsInformation .one-third {
+    width: 316px;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 30px;
+}
+
+#pointsInformation .two-thirds {
+    width: 596px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 30px 30px 0;
+}
+
+#pointsInformation .instructions {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#pointsInformation .pending-points {
+    padding: 18px;
+}
+
+#pointsInformation .pending-points-content {
+    padding: 24px 0 8px;
+    border-top: 1px solid black;
+    margin-top: 18px;
+}
+
+#pointsInformation .pending-points-content select {
+    border: none;
+    padding-left: 10px;
+    width: 535px;
+}
+
+#pointsInformation .match-played {
+    margin-top: 16px;
+}
+
+#pointsInformation .button-new {
+    width: auto !important;
+    display: inline !important;
+    padding: 8px 12px;
+}
+
+#pointsInformation .greyDDFat {
+    left: 130px;
+    height: 32px;
+    top: 30px;
+}
+
+#pointsInformation .greyDDFat span.sprite {
+    top: 10px;
+}
+
+#pointsInformation #ChristmasMatchPlayed {
+    position: relative;
+    left: 30px;
+    color: #BABABA;
+    top: 52px;
+}
+
+div.teamPopup {
+    margin: 10px;
+}
+
+div.teamPopup .pla-icon img {
+	cursor:initial;
+}
+
+.STFFsectPitch {
+    position: relative;
+    overflow: hidden;
+    height: 460px;
+}
+
+.STFFsectPitch #stff-pitch {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 660px;
+}
+
+.STFFsectPitch #pitch {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 630px;
+}
+
+.STFFsectPitch .pitch-theme1 {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/pitches/pitch-default.jpg') -13px no-repeat;
+    width: 640px;
+}
+
+.STFFsectPitch .pitch-theme2 {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/pitches/pitch-gillette.jpg') -13px 0 no-repeat;
+}
+
+.STFFsectPitch .pitch-theme3 {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/pitches/pitch-sky.jpg') -13px 0 no-repeat;
+}
+
+.STFFsectPitch .pitch-theme4 {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/pitches/pitch-dry.jpg') -13px 0 no-repeat;
+}
+
+.STFFsectPitch .pitch-theme5 {
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/template/pitches/pitch-indoor.jpg') -13px 0 no-repeat;
+}
+
+.STFFsectPitch .pitch-switcher {
+    position: absolute;
+    float: left;
+    z-index: 10;
+    overflow: hidden;
+    width: 621px;
+    height: 21px;
+    top: 399px;
+    left: 11px;
+    background: url('https://content.fantasyfootball.skysports.com/stff13/images/team/pitch-switcher.png') 100% 100% no-repeat;
+    cursor: pointer;
+    -webkit-box-shadow: inset 1px 4px 9px -6px #000000;
+    box-shadow: inset 1px 4px 9px -6px #000000;
+    -webkit-transition: height 0.2s ease-out;
+    -moz-transition: height 0.2s ease-out;
+    -o-transition: height 0.2s ease-out;
+    transition: height 0.2s ease-out;
+}
+
+ul.pointsstatus {
+	width: 310px;
+	display: block;
+	float: left;
+	border: 1px solid #CBCACA;
+	border-radius: 0 0 0 5px;
+	border-top: 0;
+	-webkit-box-shadow: 0 5px 10px -5px #000000;
+	box-shadow: 0 5px 10px -5px #000000;
+	position: relative;
+	margin-top: 0 !important;
+	margin-bottom: 10px;
+	}
+
+ul.pointsstatus li {
+	width: 310px;
+	float: left;
+	display: block;
+	border-bottom: 1px solid #CBCACA;
+}
+
+ul.pointsstatus li:last-child {
+    border-bottom: 0 none;
+}
+
+div.pointsstatus_date {
+	width: 179px;
+	line-height: 28px;
+	color: #525252;
+	font-size: 13px;
+	height: 28px;
+	text-align: center;
+	border-right: 1px solid #CBCACA;
+	background-color: #e9e6e7;
+	float: left;
+}
+
+div.pointsstatus_PREMATCH, div.pointsstatus_INPLAY, div.pointsstatus_PROVISIONAL {
+	width: 130px;
+	line-height: 28px;
+	color: #aaaaaa;
+	font-size: 13px;
+	height: 28px;
+	text-align: center;
+	float: left;
+	border-top-style: none;
+}
+
+div.pointsstatus_CONFIRMED {
+	width: 130px;
+	line-height: 28px;
+	color: #fff;
+	font-size: 13px;
+	height: 28px;
+	text-align: center;
+	float: left;
+	border-top-style: none;
+	background-color: #0fa22f;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#00a418), to(#009b00));
+	background-image: -webkit-linear-gradient(top, #00a418 0%, #009b00 100%);
+	background-image: -moz-linear-gradient(top, #00a418 0%, #009b00 100%);
+	background-image: -ms-linear-gradient(top, #00a418 0%, #009b00 100%);
+	background-image: -o-linear-gradient(top, #00a418 0%, #009b00 100%);
+	background-image: linear-gradient(to bottom, #00a418 0%, #009b00 100%);
+}

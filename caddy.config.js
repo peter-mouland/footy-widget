@@ -3,11 +3,10 @@ var pkg = require('./package.json');
 module.exports = {
     pkg: pkg,
     buildPaths: [
-        {source: "./src", targets: ['./_site', './dist'], minify: true},
-        {source: "./examples", targets: ['./_site']}
+        {source: "./src", targets: ['./_footy-ext'], minify: true}
     ],
     tasks : {
-        copy: ['fonts', 'images', 'server-config'],
+        copy: ['fonts', 'images', 'server-config', '**/*.json'],
         build: ['sass', 'mustache', 'browserify'],
         serve: 'staticApp',
         test: 'karma',

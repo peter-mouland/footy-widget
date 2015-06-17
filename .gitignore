@@ -2,9 +2,10 @@
 .sass-cache/
 .tmp/
 tmp/
-_site/
+_footy-ext/
 node_modules/
 bower_components/
 npm-debug.log
 test/coverage
 *.iml
+*.pem

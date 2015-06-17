@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Footy-widget",
+  "description": "Turn football stats into points",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "images/icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "tabs", "https://fantasyfootball.skysports.com/*"
+  ],
+  "web_accessible_resources": [
+    "scripts/stats/player-positions.json"
+  ]
+}
