@@ -9,7 +9,7 @@
     "default_popup": "popup.html"
   },
   "permissions": [
-    "tabs", "https://fantasyfootball.skysports.com/*"
+    "tabs", "https://fantasyfootball.skysports.com/*", "https://m.fantasyfootball.skysports.com/*"
   ],
   "web_accessible_resources": [
     "scripts/stats/player-positions.json"

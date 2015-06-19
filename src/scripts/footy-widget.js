@@ -3,7 +3,8 @@ var statsToPoints = require("./utils/stats-to-points.js");
 var externalWeekUrl = 'https://fantasyfootball.skysports.com/json/teaminfo/0';
 
 players = JSON.parse(players);
-var statsCreator = new htmlToStats(players);
+
+var statsCreator = new htmlToStats(tableSelector, players);
 var playerStats = statsCreator.playerStats;
 var newPlayers = statsCreator.newPlayers;
 var pointsCreator = new statsToPoints(playerStats)
@@ -29,4 +30,4 @@ playerStats.arrStats.forEach(function(player, i){
     pointsTable.push('</tr>');
 });
 //document.getElementById('points').innerHTML = pointsTable.join('')
-    document.querySelector('.STFFDataTable').innerHTML = pointsTable.join('')
+document.querySelector(tableSelector).innerHTML = pointsTable.join('')

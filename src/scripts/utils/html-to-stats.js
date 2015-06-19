@@ -1,16 +1,17 @@
 var cheerio = require('cheerio');
 
-var statistics = function(positions){
+var statistics = function(tableSelector, positions){
 
     this.newPlayers = [];
+    this.tableSelector = tableSelector;
     this.playerStats = this.tableToJson(document.body.innerHTML, positions);
 };
 
 statistics.prototype.tableToJson = function(body, positions){
     var $ = cheerio.load(body);
     var o = {  mapHeadings:{}, arrHeadings:[], arrStats: [], mapStats : {} };
-    var $th = $('.STFFDataTable th');
-    var $tr = $('.STFFDataTable tr:not(:first-child)');
+    var $th = $(this.tableSelector + ' th');
+    var $tr = $(this.tableSelector + ' tr:not(:first-child)');
     var i, th, els, el, nodes, node, td, player;
     var addPlayer = false;
     var self = this;
