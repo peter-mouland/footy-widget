@@ -1,22 +1,9 @@
 var points = function(stats){
-    this.stats = stats;
-    this.totalPoints = this.calculateAllPlayersWeek();;
-};
-
-points.prototype.calculateAllPlayersWeek = function(){
-    var points = this;
-    var weeklyPoints = [];
-    var stats = this.stats;
-    stats.arrStats.forEach(function(newPlayerStats, i){
-        var score = points.calculatePlayer(newPlayerStats)
-        stats.mapStats[newPlayerStats.Name].points = score;
-        newPlayerStats.points = score;
-        weeklyPoints.push({
-            name: newPlayerStats.Name,
-            total: score
-        });
+    var self = this;
+    Object.keys(stats).forEach(function(key, i) {
+        stats[key].points = self.calculatePlayer(stats[key]);
     });
-    return weeklyPoints;
+    this.playerStats = stats;
 };
 
 points.prototype.calculatePlayer = function(stats){

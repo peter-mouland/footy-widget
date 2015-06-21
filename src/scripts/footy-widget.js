@@ -1,33 +1,19 @@
 var htmlToStats = require("./utils/html-to-stats.js");
 var statsToPoints = require("./utils/stats-to-points.js");
-var externalWeekUrl = 'https://fantasyfootball.skysports.com/json/teaminfo/0';
+var pointsToHtml = require("./utils/points-to-html.js");
+var isChromeExtension = (typeof players !== 'undefined');
 
-players = JSON.parse(players);
+if (isChromeExtension) {
+    players = JSON.parse(players);
+} else {
+    window.players = require('./stats/player-positions.json');
+    window.tableSelector = '.STFFDataTable';
+}
 
 var statsCreator = new htmlToStats(tableSelector, players);
-var playerStats = statsCreator.playerStats;
-var newPlayers = statsCreator.newPlayers;
-var pointsCreator = new statsToPoints(playerStats)
-var totalPoints = pointsCreator.totalPoints;
+var headingsMap = statsCreator.table.headings;
+var pointsCreator = new statsToPoints(statsCreator.table.players);
+var playerStats = pointsCreator.playerStats;
+var pointsTable = pointsToHtml(playerStats, headingsMap);
 
-var pointsTable = ['<table>'];
-playerStats.arrStats.forEach(function(player, i){
-    if (i===0){
-        pointsTable.push('<tr>');
-        for (var stat in player){
-            pointsTable.push('<th>' + stat + '</th>')
-        }
-        pointsTable.push('</tr>')
-    }
-    pointsTable.push('<tr>');
-    for (var stat in player){
-        if (typeof player[stat] === 'undefined' || player[stat].toString()=="NaN"){
-            pointsTable.push('<th>&nbsp;</th>')
-        } else{
-            pointsTable.push('<th>' + player[stat] + '</th>')
-        }
-    }
-    pointsTable.push('</tr>');
-});
-//document.getElementById('points').innerHTML = pointsTable.join('')
-document.querySelector(tableSelector).innerHTML = pointsTable.join('')
+document.querySelector(tableSelector).innerHTML = pointsTable;

@@ -3,7 +3,8 @@ var pkg = require('./package.json');
 module.exports = {
     pkg: pkg,
     buildPaths: [
-        {source: "./src", targets: ['./_footy-ext'], minify: true}
+        {source: "./src", targets: ['./_footy-ext'], minify: true},
+        {source: "./test/fixtures", targets: ['./_footy-ext']}
     ],
     tasks : {
         copy: ['fonts', 'images', 'server-config', '**/*.json'],
