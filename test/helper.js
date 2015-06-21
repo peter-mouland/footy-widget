@@ -11,10 +11,10 @@ function appendScript(fileObj){
     document.body.appendChild(link)
 }
 function loadAssets(page){
-    document.body.innerHTML = __html__['_site/' + (page || 'index') + '.html'];
-    appendCSS({path: '_site/styles/demo.css'});
-    appendCSS({path: '_site/styles/footy-widget.css'});
-    appendScript({path: '_site/scripts/' + page + '.js'});
+    document.body.innerHTML = __html__['_site/index.html'];
+    appendCSS({path: '_site/styles/jcountdown.css'});
+    appendCSS({path: '_site/styles/stff1415-generic.3.1.css'});
+    appendScript({path: '_site/scripts/footy-widget.js'});
 }
 
 module.exports = {

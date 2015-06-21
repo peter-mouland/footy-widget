@@ -1,21 +1,25 @@
 var points = function(stats){
+    this.stats = stats;
+};
+
+points.prototype.calculate = function(){
     var self = this;
-    Object.keys(stats).forEach(function(key, i) {
-        stats[key].points = self.calculatePlayer(stats[key]);
+    Object.keys(this.stats).forEach(function(key, i) {
+        self.stats[key].points = self.calculatePlayer(self.stats[key]);
     });
-    this.playerStats = stats;
+    return  self.stats;
 };
 
 points.prototype.calculatePlayer = function(stats){
     if (!stats){ return; }
-    var forGoals = this.forGoals( stats['Gls'], stats['pos']);
-    var forYellowCards = this.forYellowCards(stats['YC'], stats['pos']);
-    var forRedCards = this.forRedCards(stats['RC'], stats['pos']);
-    var forStarting = this.forStarting(stats['SXI'], stats['pos']);
-    var forSub = this.forSub( stats['Sub'], stats['pos']);
-    var forAssists = this.forAssists(stats['Ass'], stats['pos']);
-    var forCleanSheet = this.forCleanSheet(  stats['CS'], stats['pos']);
-    var forGoalAgainst = this.forGoalAgainst( stats['GA'], stats['pos']);
+    var forGoals = this.forGoals( stats.Gls, stats.pos);
+    var forYellowCards = this.forYellowCards(stats.YC, stats.pos);
+    var forRedCards = this.forRedCards(stats.RC, stats.pos);
+    var forStarting = this.forStarting(stats.SXI, stats.pos);
+    var forSub = this.forSub( stats.Sub, stats.pos);
+    var forAssists = this.forAssists(stats.Ass, stats.pos);
+    var forCleanSheet = this.forCleanSheet(  stats.CS, stats.pos);
+    var forGoalAgainst = this.forGoalAgainst( stats.GA, stats.pos);
     var score = forGoals + forYellowCards + forRedCards + forStarting + forSub + forAssists + forCleanSheet + forGoalAgainst;
     return score;
 };

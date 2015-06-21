@@ -13,5 +13,5 @@ module.exports = {
         test: 'karma',
         release: ['git', 'gh-pages']
     },
-    karma: ['./test/karma.functional.js',  './test/karma.unit.js']
+    karma: ['./test/karma.unit.js']
 };

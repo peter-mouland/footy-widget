@@ -1,4 +1,4 @@
-
+/* globals chrome, XMLHttpRequest */
 var positionsPath = chrome.extension.getURL('scripts/stats/player-positions.json');
 var tableSelector;
 
@@ -8,9 +8,6 @@ function getJson(file, callback) {
     xhr.onreadystatechange = function(e) {
         if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
             callback(xhr.response);
-        }
-        if(xhr.readyState == XMLHttpRequest.DONE && xhr.status !== 200) {
-            alert('missing: ' + file)
         }
     };
     xhr.send();
